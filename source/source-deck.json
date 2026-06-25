@@ -1,0 +1,830 @@
+[
+  {
+    "number": 1,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "AI in Transportation Planning and Engineering: \nFrom Chatbots to Workflow Intelligence"
+      },
+      {
+        "type": "text",
+        "content": "A practical overview for AI Development, Use Cases, Risks, Governance, and Future Direction"
+      },
+      {
+        "type": "text",
+        "content": ""
+      }
+    ],
+    "images": [],
+    "notes": "Expanded content review draft. No section labels or slide numbers are shown."
+  },
+  {
+    "number": 2,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "What This Session Covers?\nFive practical questions about AI and our daily project work "
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "\nWhy is everyone talking about AI now?\u000bA quick look at how AI changed in the last two years and why it matters for transportation planning and engineering.\nWhat changed from chatbot to agent?\u000bHow AI moved from simple Q&A to tools, skills, agents, and digital project-team workflows.\nCan we trust AI\u2019s answers?\u000bWhy AI sometimes gets things wrong, why hallucination happens, and where human review is still required.\nHow can we actually use AI in our work?\u000bPractical examples for literature review, document comparison, GIS/data workflows, modeling support, dashboards, RAG, and NotebookLM.\nWhat should we be careful about?\u000bBasic rules for government-client work, confidential data, professional responsibility, job impact, and future opportunities.\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      },
+      {
+        "type": "text",
+        "content": "Set expectation: this is a practical overview, not a technical deep dive"
+      }
+    ],
+    "images": [
+      {
+        "path": "assets/slide2_img1.png",
+        "width": 4423350,
+        "height": 4423350
+      }
+    ],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 1\n\n## Page 1 \u2014 Title / Opening and Section Overview\n[Original heading preserved: AI Overview for Transportation Planning and Engineering / Proposed PPT Outline / Slide 1 \u2014 Title / Opening]\n\nAI Overview for Transportation Planning and Engineering\nProposed PPT Outline\n\nSlide 1 \u2014 Title / Opening\nAI in Transportation Planning and Engineering\nDevelopment, Use Cases, Risks, and Future Direction\nSubtitle:\nA practical overview for transportation planners and engineers\nPurpose:\nIntroduce the topic\nSet expectation: this is a practical overview, not a technical deep dive\nAudience: transportation planners, traffic engineers, modelers, GIS/data analysts, project managers\nOpening message:\nAI is no longer just a chatbot for summarizing text. It is becoming a workflow tool that can support research, writing, coding, GIS, data analysis, QA/QC, knowledge management, and project delivery. The key question is not whether AI is useful, but how to use it safely, effectively, and responsibly in transportation work.\n\n### Section 1 \u2014 Why AI Matters Now\n[Updated page range: Pages 2\u20133]\nSlides 2\u20133\nFocus: past two years of rapid AI development; why planners and engineers should care.\n\n### Section 2 \u2014 From Chatbot to Agentic Workflow\n[Updated page range: Pages 4\u20137]\nSlides 4\u20137\nFocus: chatbot \u2192 assistant \u2192 agent \u2192 skills \u2192 multi-agent collaboration; use the \u201cdigital project team\u201d story.\n\n### Section 3 \u2014 What AI Can and Cannot Do\n[Updated page range: Pages 8\u201310]\nSlides 8\u201310\nFocus: strengths, limitations, hallucination, \u201cCan I trust AI?\u201d\n\n### Section 4 \u2014 Transportation Planning / Engineering Use Cases\n[Updated page range: Pages 11\u201314 and Page 17]\nSlides 11\u201314\nFocus: documents, reports, GIS, Python, modeling, dashboards, public comments, project delivery.\n\n### Section 5 \u2014 RAG and NotebookLM Demo\n[Updated page range: Page 13, with NotebookLM/RAG content embedded in document workflow and source-library discussion]\nSlides 15\u201316\nFocus: why PDF summaries fail; RAG logic; NotebookLM demo with 23 State DOT RIP PDFs.\n\n### Section 6 \u2014 Governance, Risks, and Future Direction\n[Updated page range: Pages 18\u201324]\nSlides 17\u201320\nFocus: federal/state AI rules, client data, government projects, human review, future trends, final takeaway.\n\n---"
+  },
+  {
+    "number": 3,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "Why AI Matters Now"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      },
+      {
+        "type": "text",
+        "content": "Why AI Matters Now\nAI has moved from experimental chatbot to practical workflow support.\nWhat changed:\u000b\u2022 Writing, coding, research, meeting notes, and data analysis\u000b\u2022 PDFs, spreadsheets, images, code, and project documents\u000b\u2022 From \u201cCan AI help?\u201d to \u201cHow do we use it safely?\u201d\nWhy it matters to us:\u000b\u2022 Transportation work is document-heavy and data-heavy\u000b\u2022 Projects require regulations, assumptions, QA/QC, and coordination\u000b\u2022 AI can help us organize, review, summarize, and communicate faster\nKey message:\u000bAI is becoming part of the workflow, not just a tool for summarizing text.\n"
+      }
+    ],
+    "images": [
+      {
+        "path": "assets/slide3_img1.png",
+        "width": 4676075,
+        "height": 4676075
+      }
+    ],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 2\n\n## Page 2 \u2014 Why This Matters Now\n[Original label: Slide 2 \u2014 Why This Matters Now]\nAI moved from experimental to operational very quickly\nMain points:\nIn the past two years, AI capability improved dramatically\nAI is now used for writing, coding, data analysis, research, GIS workflows, meeting notes, and knowledge management\nThe question is no longer \u201cCan AI be useful?\u201d but \u201cWhere can we use it safely and effectively?\u201d\nTransportation angle:\nOur industry is document-heavy, data-heavy, regulation-heavy, and coordination-heavy\nThat makes transportation planning and engineering a strong fit for AI-assisted workflows\n\n---"
+  },
+  {
+    "number": 4,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "AI Timeline: From ChatGPT to Frontier Models"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "Main message:\nThe last two years of AI progress were not gradual. Each major jump was driven by a stronger foundation model, then quickly turned into new tools, products, and workflows.\nAI model milestones timeline:\n2022/11 \u2014 OpenAI ChatGPT / GPT-3.5\nThe public \u201cchatbot moment.\u201d AI became accessible to regular users.\n\n2023/03 \u2014 OpenAI GPT-4\nA major jump in reasoning, writing, coding, and professional use.\n\n2024/02 \u2014 Google Gemini 1.5 Pro\nLong-context and multimodal capability became a major competition area.\n\n2024/03 \u2014 Anthropic Claude 3\nClaude became a serious frontier-model competitor for writing, reasoning, coding, and document work.\n\n2024/05 \u2014 OpenAI GPT-4o\nAI moved toward real-time multimodal interaction: text, vision, and audio together.\n\n2024/06 \u2014 Anthropic Claude 3.5 Sonnet\nClaude became especially strong in coding, writing, and long-context document tasks.\n\n2024/09 \u2014 OpenAI o1-preview / reasoning models\nModels started spending more compute on \u201cthinking\u201d before answering complex questions.\n\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 3\n\n## Page 3 \u2014 AI Timeline: From ChatGPT to Frontier Models\n[Original label: Slide 3 \u2014 AI Timeline: From ChatGPT to Frontier Models]\n\nMain message:\nThe last two years of AI progress were not gradual. Each major jump was driven by a stronger foundation model, then quickly turned into new tools, products, and workflows.\n\nSimple timeline:\n\n2022 \u2014 OpenAI ChatGPT / GPT-3.5\nThe public \u201cchatbot moment.\u201d AI became accessible to regular users.\n\n2023 \u2014 OpenAI GPT-4\nA major jump in reasoning, writing, coding, and professional use.\n\n2024 \u2014 Google Gemini 1.5 Pro\nLong-context and multimodal capability became a major competition area.\n\n2024 \u2014 Anthropic Claude 3 / Claude 3.5 Sonnet\nClaude became especially strong in writing, coding, document work, and long-context tasks.\n\n2024 \u2014 OpenAI GPT-4o\nAI moved toward real-time multimodal interaction: text, vision, and audio together.\n\n2024\u20132025 \u2014 OpenAI o1 / reasoning models\nModels started spending more compute on \u201cthinking\u201d before answering complex questions.\n\n2025 \u2014 DeepSeek-R1\nOpen-source reasoning models became a serious competitive force.\n\n2025 \u2014 Anthropic Claude 4\nThe focus shifted strongly toward coding, advanced reasoning, and AI agents.\n\n2025 \u2014 OpenAI GPT-5\nAI systems became more focused on coding, agentic tasks, and longer tool-use workflows.\n\n2026 \u2014 OpenAI GPT-5.5 / Anthropic Claude Fable 5 & Mythos 5\nThe frontier moved toward stronger agentic work, coding, cybersecurity-sensitive capability, and government-level access control.\n\nFun fact / current event:\nIn June 2026, the U.S. government issued an export-control directive requiring Anthropic to suspend access to Claude Fable 5 and Claude Mythos 5 for foreign nationals, including Anthropic\u2019s own foreign-national employees. Anthropic said it had to disable access broadly to comply. This is a useful example showing that frontier AI models are now being treated not just as software products, but as strategic technology with national-security implications.\n\nSpeaker note:\nDon\u2019t make this slide too technical. The key story is that AI development is model-driven: every major model release expands what people can do. First it was chatbot Q&A. Then it became document reading, coding, voice, images, reasoning, tool use, agents, and now regulated frontier capability.\n\n---"
+  },
+  {
+    "number": 5,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "AI Timeline: From ChatGPT to Frontier Models \u2014 Continued"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "2025/01 \u2014 DeepSeek-R1\nOpen-source reasoning models became a serious competitive force.\n\n2025/05 \u2014 Anthropic Claude 4\nThe focus shifted strongly toward coding, advanced reasoning, and AI agents.\n\n2025/08 \u2014 OpenAI GPT-5\nAI systems became more focused on coding, agentic tasks, and longer tool-use workflows.\n\n2026/04 \u2014 OpenAI GPT-5.5\nThe frontier moved toward stronger agentic work, coding, research, data analysis, and complex tool-use workflows.\n\n2026/06 \u2014 Anthropic Claude Fable 5 and Claude Mythos 5\nAnthropic launched Claude Fable 5 and Mythos 5, then suspended access after U.S. government restrictions. This is a useful example of frontier AI being treated as strategic technology with national-security implications.\n"
+      },
+      {
+        "type": "text",
+        "content": "\nFun fact / current event:\nIn June 2026, the U.S. government issued an export-control directive requiring Anthropic to suspend access to Claude Fable 5 and Claude Mythos 5 for foreign nationals, including Anthropic\u2019s own foreign-national employees. \n\nAnthropic said it had to disable access broadly to comply. This is a useful example showing that frontier AI models are now being treated not just as software products, but as strategic technology with national-security implications."
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 3\n\n## Page 3 \u2014 AI Timeline: From ChatGPT to Frontier Models\n[Original label: Slide 3 \u2014 AI Timeline: From ChatGPT to Frontier Models]\n\nMain message:\nThe last two years of AI progress were not gradual. Each major jump was driven by a stronger foundation model, then quickly turned into new tools, products, and workflows.\n\nSimple timeline:\n\n2022 \u2014 OpenAI ChatGPT / GPT-3.5\nThe public \u201cchatbot moment.\u201d AI became accessible to regular users.\n\n2023 \u2014 OpenAI GPT-4\nA major jump in reasoning, writing, coding, and professional use.\n\n2024 \u2014 Google Gemini 1.5 Pro\nLong-context and multimodal capability became a major competition area.\n\n2024 \u2014 Anthropic Claude 3 / Claude 3.5 Sonnet\nClaude became especially strong in writing, coding, document work, and long-context tasks.\n\n2024 \u2014 OpenAI GPT-4o\nAI moved toward real-time multimodal interaction: text, vision, and audio together.\n\n2024\u20132025 \u2014 OpenAI o1 / reasoning models\nModels started spending more compute on \u201cthinking\u201d before answering complex questions.\n\n2025 \u2014 DeepSeek-R1\nOpen-source reasoning models became a serious competitive force.\n\n2025 \u2014 Anthropic Claude 4\nThe focus shifted strongly toward coding, advanced reasoning, and AI agents.\n\n2025 \u2014 OpenAI GPT-5\nAI systems became more focused on coding, agentic tasks, and longer tool-use workflows.\n\n2026 \u2014 OpenAI GPT-5.5 / Anthropic Claude Fable 5 & Mythos 5\nThe frontier moved toward stronger agentic work, coding, cybersecurity-sensitive capability, and government-level access control.\n\nFun fact / current event:\nIn June 2026, the U.S. government issued an export-control directive requiring Anthropic to suspend access to Claude Fable 5 and Claude Mythos 5 for foreign nationals, including Anthropic\u2019s own foreign-national employees. Anthropic said it had to disable access broadly to comply. This is a useful example showing that frontier AI models are now being treated not just as software products, but as strategic technology with national-security implications.\n\nSpeaker note:\nDon\u2019t make this slide too technical. The key story is that AI development is model-driven: every major model release expands what people can do. First it was chatbot Q&A. Then it became document reading, coding, voice, images, reasoning, tool use, agents, and now regulated frontier capability.\n\n---"
+  },
+  {
+    "number": 6,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": " Chatbot vs. AI Agent\n"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "AI is shifting from simple conversation to workflow execution.\nA chatbot answers individual questions. It is useful for quick summaries, explanations, writing support, translation, and brainstorming. But the user still has to manage the full workflow.\nAn AI agent works toward a broader goal. It can break the task into steps, use tools, apply assigned skills, check intermediate results, and produce a more complete output.\nExample:\u000bChatbot: \u201cSummarize this resilience guidance document.\u201d\nAgent: \u201cReview these State DOT resilience plans, compare risk scoring methods, build a table, draft a memo outline, and flag missing information.\u201d\n\n"
+      },
+      {
+        "type": "text",
+        "content": "Tools are what the agent can use: PDFs, spreadsheets, Python, GIS, databases, web search, and document generation.\nSkills are reusable playbooks: PDF review, data QA/QC, methodology comparison, dashboard requirements, meeting summary, and slide preparation.\nKey takeaway:\u000bA chatbot responds. An agent organizes and executes a workflow."
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 6\n\n## Page 6 \u2014 Agent, Tools, and Skills\n[Original label: Slide 3C \u2014 Agent, Tools, and Skills]\nSkills are reusable capabilities that help agents perform specific types of work\nMain points:\nA tool is something the AI can call\nA skill is a packaged workflow or specialized capability\nAn agent uses tools and skills to complete a larger task\nSimple distinction:\nTool:\n\u201cRun Python\u201d\n\u201cSearch documents\u201d\n\u201cRead a spreadsheet\u201d\n\u201cGenerate slides\u201d\n\u201cQuery a database\u201d\nSkill:\n\u201cAnalyze a PDF report\u201d\n\u201cCreate a PowerPoint deck\u201d\n\u201cSummarize meeting notes\u201d\n\u201cBuild a data QA/QC checklist\u201d\n\u201cConvert raw project notes into a structured user story\u201d\nAgent:\nDecides when and how to use these tools and skills to complete a goal\nTransportation example:\nTask: \u201cCreate a project risk dashboard concept\u201d\nSkills involved:\nSummarize project guidance\nExtract scoring categories\nClean asset data\nDesign filters\nDraft dashboard user stories\nPrepare a stakeholder-facing explanation\nKey message:\nSkills make AI more repeatable. Instead of prompting from scratch every time, a team can define standard workflows.\nVisual suggestion:\nHierarchy diagram:\nGoal\nAgent\nSkills\nTools\nData / documents / code / maps\nSpeaker note:\nIn our industry, this is important because we do not only need creative answers. We need repeatable, auditable, project-specific workflows.\n---"
+  },
+  {
+    "number": 7,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "A transportation planning task example:\nBefore and After using AI Agents"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "User case senario:\nImagine we are preparing a resilience planning task for a DOT.\n\nWithout AI, A traditional literature review can take weeks or months, reading hundreds or thousands pages document depending on the number of source documents, required synthesis, and deliverable format.\n\nIn the old chatbot mode, we ask:\n\u201cSummarize this resilience guidance document.\u201d\nThe chatbot gives us a summary, which is helpful. But most of the actual work still remains with the human team: opening every PDF, comparing different plans, building tables, writing code, drafting slides, and checking consistency.\n\n\u201d"
+      },
+      {
+        "type": "text",
+        "content": "In the agent mode, we give a broader goal:\n\u201cHelp me prepare an internal briefing on how different State DOTs evaluate transportation resilience risk.\u201d\nThe agent does not just answer one question. It starts organizing the workflow: reading the uploaded guidance documents, identifying major risk categories, extracting scoring methods, comparing base-year, mid-term, and long-term scenarios, creating comparison tables, flagging missing information, drafting a technical memo outline, generating slide content, and suggesting QA/QC checks before the output is used.\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 7\n\n## Page 7 \u2014 A Simple Story: Planning Office Before and After Agents\n[Original label: Slide 3D \u2014 A Simple Story: Planning Office Before and After Agents]\nA transportation planning example\nStory:\nImagine we are preparing a resilience planning task for a DOT.\nIn the old chatbot mode, we ask:\n\u201cSummarize this resilience guidance document.\u201d\nThe chatbot gives a summary. That is helpful, but the work still depends on us to open every PDF, compare every plan, build tables, write code, draft slides, and check consistency.\nIn the agent mode, we give a broader goal:\n\u201cHelp me prepare an internal briefing on how different state DOTs evaluate transportation resilience risk.\u201d\nThe agent does not just answer one question. It starts organizing the work:\nIt reads the uploaded guidance documents\nIt identifies the main risk categories\nIt extracts scoring methods\nIt compares base year, mid-term, and long-term scenarios\nIt creates a table of similarities and differences\nIt flags missing information\nIt drafts a technical memo outline\nIt generates slide content for a project meeting\nIt suggests QA/QC checks before the result is used\nNow imagine a higher-level multi-agent workflow:\nResearch Agent:\nReviews DOT reports, federal guidance, and academic references\nData Agent:\nChecks asset data, risk scores, TAZ-level outputs, VMT/VHT, and scenario tables\nGIS Agent:\nDesigns map layers, filters, heat maps, and dashboard logic\nWriting Agent:\nDrafts memo language, slide text, and stakeholder summaries\nQA/QC Agent:\nChecks assumptions, missing fields, inconsistent numbers, and unsupported claims\nHuman Lead:\nReviews the output, applies professional judgment, decides what is acceptable for the client deliverable\nKey message:\nMulti-agent collaboration does not mean AI replaces the project team.\nIt means AI can imitate parts of a project workflow, while humans remain responsible for judgment, quality, and final decisions.\nVisual suggestion:\nUse a \u201cproject team\u201d diagram:\nHuman Project Lead in the center\nAround it:\nResearch Agent\nData Agent\nGIS Agent\nWriting Agent\nQA/QC Agent\nFinal output:\nBriefing memo\nDashboard concept\nRisk methodology comparison\nPresentation slides\nSpeaker note:\nThis story helps people understand that agentic AI is not one super-intelligent robot. It is closer to a coordinated digital project team, where each agent has a narrow role and the human remains the project manager.\n\n---"
+  },
+  {
+    "number": 8,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "Planning Office Before and After Agents \u2014 Continued"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "GIS Agent:\u000b Supports map-based analysis by organizing layers, suggesting filters, designing heat maps, and preparing dashboard logic for spatial risk communication.\nWriting Agent:\u000b Drafts technical memo language, slide content, executive summaries, stakeholder-facing explanations, and meeting materials.\nQA/QC Agent:\u000b Reviews assumptions, checks numbers, flags unsupported claims, compares outputs against source documents, and identifies inconsistencies before the material is used.\nHuman Lead:\u000b Defines the project objective, reviews the AI outputs, applies professional judgment, communicates with the client, and remains responsible for the final deliverable.\n"
+      },
+      {
+        "type": "text",
+        "content": "Now imagine a higher-level multi-agent workflow. Instead of asking one AI assistant to do everything, different specialized agents support different parts of the project.\nResearch Agent:\u000b Reviews State DOT reports, federal guidance, academic references, and prior project materials. It identifies relevant policies, methodologies, best practices, and common themes.\nData Agent:\u000bChecks asset data, risk scores, scenario tables, TAZ-level outputs, VMT/VHT summaries, and other project datasets. It helps identify missing fields, inconsistent values, and data quality issues.\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 7\n\n## Page 7 \u2014 A Simple Story: Planning Office Before and After Agents\n[Original label: Slide 3D \u2014 A Simple Story: Planning Office Before and After Agents]\nA transportation planning example\nStory:\nImagine we are preparing a resilience planning task for a DOT.\nIn the old chatbot mode, we ask:\n\u201cSummarize this resilience guidance document.\u201d\nThe chatbot gives a summary. That is helpful, but the work still depends on us to open every PDF, compare every plan, build tables, write code, draft slides, and check consistency.\nIn the agent mode, we give a broader goal:\n\u201cHelp me prepare an internal briefing on how different state DOTs evaluate transportation resilience risk.\u201d\nThe agent does not just answer one question. It starts organizing the work:\nIt reads the uploaded guidance documents\nIt identifies the main risk categories\nIt extracts scoring methods\nIt compares base year, mid-term, and long-term scenarios\nIt creates a table of similarities and differences\nIt flags missing information\nIt drafts a technical memo outline\nIt generates slide content for a project meeting\nIt suggests QA/QC checks before the result is used\nNow imagine a higher-level multi-agent workflow:\nResearch Agent:\nReviews DOT reports, federal guidance, and academic references\nData Agent:\nChecks asset data, risk scores, TAZ-level outputs, VMT/VHT, and scenario tables\nGIS Agent:\nDesigns map layers, filters, heat maps, and dashboard logic\nWriting Agent:\nDrafts memo language, slide text, and stakeholder summaries\nQA/QC Agent:\nChecks assumptions, missing fields, inconsistent numbers, and unsupported claims\nHuman Lead:\nReviews the output, applies professional judgment, decides what is acceptable for the client deliverable\nKey message:\nMulti-agent collaboration does not mean AI replaces the project team.\nIt means AI can imitate parts of a project workflow, while humans remain responsible for judgment, quality, and final decisions.\nVisual suggestion:\nUse a \u201cproject team\u201d diagram:\nHuman Project Lead in the center\nAround it:\nResearch Agent\nData Agent\nGIS Agent\nWriting Agent\nQA/QC Agent\nFinal output:\nBriefing memo\nDashboard concept\nRisk methodology comparison\nPresentation slides\nSpeaker note:\nThis story helps people understand that agentic AI is not one super-intelligent robot. It is closer to a coordinated digital project team, where each agent has a narrow role and the human remains the project manager.\n\n---"
+  },
+  {
+    "number": 9,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "How Human-in-the-Loop AI Works Like a Digital Project Team "
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "Agentic AI works like a digital project team: agents perform specialized tasks, skills define how they work, tools provide capabilities, and the human lead remains responsible for direction, judgment, and final approval.\n"
+      },
+      {
+        "type": "text",
+        "content": "Human Lead as Project Manager\u000b The human defines the objective, assigns tasks, sets quality standards, reviews outputs, makes judgment calls, and remains responsible for the final deliverable.\nAgents as Specialized Team Members\u000b Each agent supports a specific part of the workflow, such as research, data review, GIS analysis, writing, or QA/QC.\nSkills as Assigned Capabilities\u000b Skills are reusable playbooks or capabilities assigned to agents, such as document review, data cleaning, methodology comparison, dashboard design, or slide preparation.\nTools and Data as Work Resources\u000b Agents use tools and data sources to complete their assigned tasks, including PDFs, spreadsheets, GIS layers, Python scripts, databases, and internal knowledge bases.\nEscalation to Human\u000b When the agents encounter missing information, conflicting assumptions, uncertain results, or high-risk decisions, they escalate the issue to the human lead for direction.\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 7\n\n## Page 7 \u2014 A Simple Story: Planning Office Before and After Agents\n[Original label: Slide 3D \u2014 A Simple Story: Planning Office Before and After Agents]\nA transportation planning example\nStory:\nImagine we are preparing a resilience planning task for a DOT.\nIn the old chatbot mode, we ask:\n\u201cSummarize this resilience guidance document.\u201d\nThe chatbot gives a summary. That is helpful, but the work still depends on us to open every PDF, compare every plan, build tables, write code, draft slides, and check consistency.\nIn the agent mode, we give a broader goal:\n\u201cHelp me prepare an internal briefing on how different state DOTs evaluate transportation resilience risk.\u201d\nThe agent does not just answer one question. It starts organizing the work:\nIt reads the uploaded guidance documents\nIt identifies the main risk categories\nIt extracts scoring methods\nIt compares base year, mid-term, and long-term scenarios\nIt creates a table of similarities and differences\nIt flags missing information\nIt drafts a technical memo outline\nIt generates slide content for a project meeting\nIt suggests QA/QC checks before the result is used\nNow imagine a higher-level multi-agent workflow:\nResearch Agent:\nReviews DOT reports, federal guidance, and academic references\nData Agent:\nChecks asset data, risk scores, TAZ-level outputs, VMT/VHT, and scenario tables\nGIS Agent:\nDesigns map layers, filters, heat maps, and dashboard logic\nWriting Agent:\nDrafts memo language, slide text, and stakeholder summaries\nQA/QC Agent:\nChecks assumptions, missing fields, inconsistent numbers, and unsupported claims\nHuman Lead:\nReviews the output, applies professional judgment, decides what is acceptable for the client deliverable\nKey message:\nMulti-agent collaboration does not mean AI replaces the project team.\nIt means AI can imitate parts of a project workflow, while humans remain responsible for judgment, quality, and final decisions.\nVisual suggestion:\nUse a \u201cproject team\u201d diagram:\nHuman Project Lead in the center\nAround it:\nResearch Agent\nData Agent\nGIS Agent\nWriting Agent\nQA/QC Agent\nFinal output:\nBriefing memo\nDashboard concept\nRisk methodology comparison\nPresentation slides\nSpeaker note:\nThis story helps people understand that agentic AI is not one super-intelligent robot. It is closer to a coordinated digital project team, where each agent has a narrow role and the human remains the project manager.\n\n---"
+  },
+  {
+    "number": 10,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "What AI Is Actually Good At and Not Good At?"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "AI is best at language, structure, pattern recognition, and workflow acceleration\nGood uses:\nSummarizing long documents\nDrafting emails, reports, meeting notes, and proposals\nExplaining technical concepts\nCreating outlines and presentation materials\nWriting and debugging code\nTransforming messy notes into structured content\nExtracting themes from documents\nHelping design workflows\nImportant limitation:\nAI does not automatically know what is true\nIt can sound confident while being wrong"
+      },
+      {
+        "type": "text",
+        "content": "AI is not a replacement for professional judgment\nLimitations:\nAI may:\n\u2022 Generate false but plausible information, including facts, citations, numbers, or policies\u000b\u2022 Miss highly specific local context unless that context is provided\u000b\u2022 Struggle with proprietary or internal data unless securely connected\u000b\u2022 Misread maps, tables, engineering assumptions, or model outputs\u000b\u2022 Produce analysis that sounds reasonable but is technically incorrect\u000b\u2022 Be unreliable as the sole basis for legal, engineering, safety, or funding decisions\nKey Message\nAI should support professional judgment, not replace it.\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 8\n\n## Page 8 \u2014 What AI Is Actually Good At\n[Original label: Slide 4 \u2014 What AI Is Actually Good At]\nAI is best at language, structure, pattern recognition, and workflow acceleration\nGood uses:\nSummarizing long documents\nDrafting emails, reports, meeting notes, and proposals\nExplaining technical concepts\nCreating outlines and presentation materials\nWriting and debugging code\nTransforming messy notes into structured content\nExtracting themes from documents\nHelping design workflows\nImportant limitation:\nAI does not automatically know what is true\nIt can sound confident while being wrong\n\n---"
+  },
+  {
+    "number": 11,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "Why Does AI Sometimes \u201cLie\u201d? Can I Trust AI?"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "Why Does AI Sometimes \u201cLie\u201d? Can We Trust AI?\nAI does not usually \u201clie\u201d in the human sense. It is not trying to deceive the user.\nInstead, AI generates the most likely response based on language patterns, available context, and the prompt. This means it can produce answers that sound fluent and confident, even when they are wrong. This is called a hallucination (huh-loo-suh-NAY-shun) .\nCommon causes:\n\u2022 Not enough context\u000b\u2022 Misunderstanding the question\u000b\u2022 Missing tables, maps, figures, footnotes, or appendices\u000b\u2022 Difficulty reading long, scanned, or poorly formatted documents\u000b\u2022 Mixing uploaded information with general training knowledge\u000b\u2022 Producing plausible but unsupported analysis\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      },
+      {
+        "type": "text",
+        "content": "Better question:\nNot just: Can I trust AI?\u000bBut: Can I verify the answer from a reliable source?\nKey Message\nAI is useful for brainstorming, drafting, summarizing, and organizing information.\nFor engineering, legal, safety, funding, or client-facing decisions, AI output must be checked by a human professional.\nTrust AI as an assistant, not as an authority.\n"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 10\n\n## Page 10 \u2014 Why Does AI Sometimes \u201cLie\u201d? Can I Trust AI?\n[Original label: Why Does AI Sometimes \u201cLie\u201d? Can I Trust AI?]\n\u5185\u5bb9\u53ef\u4ee5\u8fd9\u6837\u5199\uff1a\nAI does not usually \u201clie\u201d in the human sense. It is not intentionally trying to deceive the user. The real issue is that AI generates the most likely answer based on patterns in language, available context, and the user\u2019s prompt.\nThat means AI can produce an answer that sounds fluent and confident, even when the answer is wrong. This is often called a hallucination.\nThis can happen for several reasons. The AI may not have enough context. It may misunderstand the question. It may fail to read a long PDF correctly. It may miss tables, figures, scanned pages, footnotes, or appendices. It may also mix information from the uploaded document with its general training knowledge.\nSo the better question is not simply \u201cCan I trust AI?\u201d The better question is: \u201cIs this AI answer grounded in a reliable source, and can I verify it?\u201d\nFor low-risk tasks like brainstorming, outlining, rewriting, or summarizing meeting notes, AI can be very useful. For high-risk tasks like engineering conclusions, legal interpretation, official numbers, safety decisions, or client deliverables, AI output must be checked by a human professional.\nKey message:\nAI can be trusted as an assistant, not as an authority. Trust the workflow, the sources, and the verification process \u2014 not just the confident wording.\n\n---"
+  },
+  {
+    "number": 12,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "RAG and Knowledge Bases\nA better way to use AI with technical documents "
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "How RAG Works \u2014 Simple Explanation\nRAG means Retrieval-Augmented Generation.\nIn simple terms, RAG works in two steps:\nStep 1: Retrieve\u000bThe system searches the selected documents and finds the most relevant sections.\nStep 2: Generate\u000bThe AI uses those retrieved sections to generate an answer.\nThe key idea is that the AI is not just answering from memory. It is answering based on the documents we provide.\nBehind the scenes, the system converts text into vectors, which are like \u201cmeaning coordinates.\u201d Text with similar meaning is placed closer together, even if the exact words are different.\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      },
+      {
+        "type": "text",
+        "content": "Simple Example\nUser asks:\u000bWhich DOT plans discuss flooding risk?\nThe document may use different terms, such as:\n\u2022 Flooding\u000b\u2022 Sea level rise\u000b\u2022 Storm surge\u000b\u2022 Coastal inundation\u000b\u2022 Drainage impacts\u000b\u2022 Riverine flooding\nRAG can find these related sections because they are semantically similar, not only because they share the exact same keyword.\nKey Message\nRAG helps AI search the right documents first, then answer based on the most relevant source material.\n"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 13\n\n## Page 13 \u2014 RAG and Knowledge Bases\n[Original label: Slide 8 \u2014 RAG and Knowledge Bases]\nThe better way to use AI with technical documents\nDefinition:\nRAG means Retrieval-Augmented Generation\nThe AI answers based on a selected document set instead of relying only on its general training knowledge\nWhy it matters:\nBetter for agency manuals, project reports, guidance documents, meeting notes, and technical standards\nReduces hallucination\nMakes answers more traceable\nHelps teams reuse institutional knowledge\nExample:\nUpload state DOT resilience plans, PROTECT guidance, risk assessment reports, and model documentation\nAsk the AI to compare methods, summarize assumptions, or find specific criteria\nKey message:\nFor our work, AI is most valuable when connected to the right documents and data.\n\n---"
+  },
+  {
+    "number": 13,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "RAG / NotebookLM Demo: 23 State DOT RIP PDFs\u000bUsing AI to compare resilience methods across technical documents"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "\nTool: NotebookLM\nDeveloper: Google\nAccess: Web-based tool with a free version and usage limits\nPractical Benefit: Accessible from our company laptops through a browser, making it easy to demonstrate RAG-style document search without custom software development.\n\u000bSource Library: 23 State DOT Resilience Improvement Plan / resilience-related PDF documents\nExample Questions\n\u2022 Which states use risk scoring?\u000b\u2022 What hazards are commonly included across these DOT plans?\u000b\u2022 How do different DOTs define vulnerability, criticality, exposure, and equity?\u000b\u2022 Do the plans discuss base year, mid-term, or long-term scenarios?\u000b\u2022 Can we create a methodology comparison table by state?\u000b\u2022 What assumptions are unclear?\u000b\u2022 What are the common gaps?\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      },
+      {
+        "type": "text",
+        "content": "Why This Matters for Transportation Planning\nThis is close to how we actually work: we compare guidance documents, extract methodologies, check assumptions, identify gaps, and turn complex information into memos, slides, dashboard requirements, or project recommendations.\nDemo Link\nhttps://notebooklm.google.com/notebook/170159b2-1d20-4a3c-91f3-1afbe9e63658?pli=1\nKey Message\nThe goal is not just to summarize PDFs. The goal is to compare methods, extract assumptions, identify gaps, and support project-ready synthesis.\n"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_transportation_planning_clean_markdown_master.md \u2014 Slide 17\n\n# Slide 17 \u2014 NotebookLM Demo: 23 State DOT RIP PDFs\n\n## Title\nNotebookLM Demo: 23 State DOT RIP PDFs\n\n## Main message\nNotebookLM is a simple RAG-style example for technical document search and synthesis.\n\n## Demo setup\n- Tool: NotebookLM\n- Source library: 23 State DOT Resilience Improvement Plan / resilience-related PDF documents\n- Demo link: https://notebooklm.google.com/notebook/170159b2-1d20-4a3c-91f3-1afbe9e63658?pli=1\n\n## Demo purpose\nThe goal is not just to summarize PDFs. The goal is to compare methods, extract assumptions, identify gaps, and support project-ready synthesis.\n\n## Example questions\n- What hazards are commonly included across these DOT plans?\n- Which states use risk scoring?\n- How do different DOTs define vulnerability, criticality, exposure, and equity?\n- Do the plans discuss base year, mid-term, or long-term scenarios?\n- Can we create a methodology comparison table by state?\n- What assumptions are unclear?\n- What are the common gaps?\n\n## Key message\nFor transportation planning, this is close to how we actually work: compare guidance documents, extract methodologies, check assumptions, and turn complex information into memos, slides, dashboard requirements, or project recommendations.\n\n## Visual suggestion\nShow a mock \u201csource library\u201d on the left and \u201cquestion / synthesis / citations\u201d on the right.\n\n## Speaker notes\nEmphasize that NotebookLM is not the only RAG tool, but it is a simple and easy-to-understand demo. It shows the basic value of grounding AI in a controlled source set.\n\n---"
+  },
+  {
+    "number": 14,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "NotebookLM Tips: What Else Can It Be Used For?"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "\nGood Use Cases\n\u2022 Software manuals\u000bFind steps, troubleshoot errors, compare workflows, and create quick user guides.\n\u2022 Traffic design manuals\u000bSearch design criteria, summarize requirements, compare chapters, and identify applicable standards.\n\u2022 HCM / technical methods\u000bFind definitions, methodology steps, assumptions, input requirements, and calculation procedures.\n\u2022 Planning codes and policies\u000bSummarize requirements, compare policy language, extract review criteria, and identify approval conditions.\n\u2022 Agency guidance documents\u000bCompare DOT guidance, federal guidance, local procedures, and project-specific requirements.\n\u2022 Meeting notes and project records\u000bSummarize decisions, action items, assumptions, open questions, and follow-up needs.\n\u2022 Model documentation\u000bFind calibration assumptions, scenario definitions, data sources, limitations, and methodology notes.\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      },
+      {
+        "type": "text",
+        "content": "Practical Tips\n\u2022 Create one notebook per project or topic\u000b\u2022 Upload only the documents relevant to that question\u000b\u2022 Ask for answers with source citations\u000b\u2022 Ask the AI to create comparison tables\u000b\u2022 Ask what assumptions are unclear or missing\u000b\u2022 Use it to draft memos, slides, checklists, and dashboard requirements\u000b\u2022 Always verify important outputs against the original source documents\nKey Message\nNotebookLM is not just for summarizing documents. It can help turn manuals, standards, reports, codes, and project notes into a searchable knowledge base.\n\n"
+      },
+      {
+        "type": "text",
+        "content": "\nNotebookLM is useful when we need to search, compare, and synthesize technical documents."
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_transportation_planning_clean_markdown_master.md \u2014 Slide 17\n\n# Slide 17 \u2014 NotebookLM Demo: 23 State DOT RIP PDFs\n\n## Title\nNotebookLM Demo: 23 State DOT RIP PDFs\n\n## Main message\nNotebookLM is a simple RAG-style example for technical document search and synthesis.\n\n## Demo setup\n- Tool: NotebookLM\n- Source library: 23 State DOT Resilience Improvement Plan / resilience-related PDF documents\n- Demo link: https://notebooklm.google.com/notebook/170159b2-1d20-4a3c-91f3-1afbe9e63658?pli=1\n\n## Demo purpose\nThe goal is not just to summarize PDFs. The goal is to compare methods, extract assumptions, identify gaps, and support project-ready synthesis.\n\n## Example questions\n- What hazards are commonly included across these DOT plans?\n- Which states use risk scoring?\n- How do different DOTs define vulnerability, criticality, exposure, and equity?\n- Do the plans discuss base year, mid-term, or long-term scenarios?\n- Can we create a methodology comparison table by state?\n- What assumptions are unclear?\n- What are the common gaps?\n\n## Key message\nFor transportation planning, this is close to how we actually work: compare guidance documents, extract methodologies, check assumptions, and turn complex information into memos, slides, dashboard requirements, or project recommendations.\n\n## Visual suggestion\nShow a mock \u201csource library\u201d on the left and \u201cquestion / synthesis / citations\u201d on the right.\n\n## Speaker notes\nEmphasize that NotebookLM is not the only RAG tool, but it is a simple and easy-to-understand demo. It shows the basic value of grounding AI in a controlled source set.\n\n---"
+  },
+  {
+    "number": 15,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "Common Concerns, Guardrails, and Professional Responsibility "
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "Common Concerns, Guardrails, and Professional Responsibility\nAI concerns are valid, but they should be managed with guardrails \u2014 not ignored.\nCommon Concerns\n\u2022 Will AI replace planners or engineers?\u000b\u2022 Can we trust the answer?\u000b\u2022 Is it allowed for client work?\u000b\u2022 What happens to confidential data?\u000b\u2022 Will it create legal or professional risk?\nPractical Guardrails\n\u2022 Do not upload confidential client data to unauthorized tools\u000b\u2022 Do not treat AI output as final\u000b\u2022 Verify sources, numbers, citations, assumptions, and policy references\u000b\u2022 Use human review for client deliverables and high-risk decisions\u000b\u2022 Follow company, client, and agency AI policies\u000b\u2022 Document AI-assisted workflows when needed\nBalanced Answer\nAI can improve productivity, but weak review creates risk.\nThe risk is not using AI; the risk is using AI casually without controls.\nKey Message\nAI supports the professional team. It does not replace professional judgment or responsibility.\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 14\n\n## Page 14 \u2014 Legal, Policy, and Compliance Considerations\n[Original label: Slide 9 \u2014 Legal, Policy, and Compliance Considerations]\nAI use needs guardrails\nTopics:\nConfidentiality\nClient data protection\nPublic records implications\nCopyright and licensing\nData privacy\nSensitive infrastructure information\nProfessional liability\nUse of AI-generated content in deliverables\nNeed for human review and documentation\nPractical guidance:\nDo not upload confidential client data to unauthorized tools\nDo not treat AI output as final\nVerify sources, numbers, citations, and assumptions\nFollow company, client, and agency AI policies\nKeep a record of AI-assisted workflows when needed\n\n---"
+  },
+  {
+    "number": 16,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "Government-Client Projects: Rules and Guardrails"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "\nCase 1 \u2014 Federal AI Use Policy: OMB M-25-21\nFederal agencies are encouraged to adopt AI, but they must manage it through governance, risk management, transparency, and public trust. \nOMB M-25-21 tells agencies to accelerate AI use while maintaining safeguards for privacy, civil rights, civil liberties, and high-impact AI use cases.\n\nSource: White House / OMB, \u201cM-25-21: Accelerating Federal Use of AI through Innovation, Governance, and Public Trust.\u201d"
+      },
+      {
+        "type": "text",
+        "content": "\nCase 2 \u2014 Federal AI Procurement: OMB M-25-22\nWhen federal agencies buy AI systems or AI services, they need to consider performance, risk, competition, vendor lock-in, government data rights, privacy, cybersecurity, and cross-functional review. \nThis matters to consultants because AI-related tools or deliverables may be treated as part of federal technology acquisition or government data use.\n\nSource: White House / OMB, \u201cM-25-22: Driving Efficient Acquisition of Artificial Intelligence in Government.\u201d\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      },
+      {
+        "type": "text",
+        "content": "AI is not generally banned in government transportation work, but it is increasingly controlled by agency policy, procurement rules, data protection rules, and human-review requirements."
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 18\n\n## Page 18 \u2014 AI Use for Government-Client Projects: Current Rules and Guardrails\n[Original label: Slide \u2014 AI Use for Government-Client Projects: Current Rules and Guardrails]\n\nAI is not generally banned in government transportation work, but it is increasingly controlled by agency policy, procurement rules, data protection rules, and human-review requirements.\n\nCase 1 \u2014 Federal AI Use Policy: OMB M-25-21\n\nFederal agencies are encouraged to adopt AI, but they must manage it through governance, risk management, transparency, and public trust. OMB M-25-21 tells agencies to accelerate AI use while maintaining safeguards for privacy, civil rights, civil liberties, and high-impact AI use cases.\n\nSource: White House / OMB, \u201cM-25-21: Accelerating Federal Use of AI through Innovation, Governance, and Public Trust.\u201d\n\nCase 2 \u2014 Federal AI Procurement: OMB M-25-22\n\nWhen federal agencies buy AI systems or AI services, they need to consider performance, risk, competition, vendor lock-in, government data rights, privacy, cybersecurity, and cross-functional review. This matters to consultants because AI-related tools or deliverables may be treated as part of federal technology acquisition or government data use.\n\nSource: White House / OMB, \u201cM-25-22: Driving Efficient Acquisition of Artificial Intelligence in Government.\u201d\n\nCase 3 \u2014 U.S. DOT AI Direction\n\nU.S. DOT supports AI for transportation safety, innovation, automated systems, traffic management, internal operations, research, citizen-facing services, NLP, computer vision, and predictive analytics. U.S. DOT also links its AI strategy to OMB M-25-21 compliance planning.\n\nSource: U.S. DOT, \u201cArtificial Intelligence Activities.\u201d\n\nCase 4 \u2014 FHWA AI Deployment Center of Excellence\n\nFHWA created the AI Deployment Center of Excellence as a national resource to guide AI adoption across surface transportation. The focus is not \u201cuse AI casually\u201d; it is coordinated adoption, best practices, lower deployment risk, workforce development, and AI use cases that improve planning, operations, maintenance, and investment decisions.\n\nSource: FHWA, \u201cArtificial Intelligence Deployment Center of Excellence.\u201d\n\nCase 5 \u2014 Georgia State Government / GTA GenAI Policy\n\nGeorgia Technology Authority has a statewide Generative AI Responsible Use policy, effective July 1, 2025, covering responsible use, development, procurement, and governance of GenAI within Georgia executive branch agencies. The Georgia guidelines also say state employees should use pre-vetted tools, record prompts, review AI-generated content, and keep a human-in-the-loop approach.\n\nSource: Georgia Technology Authority, \u201cGenerative AI Responsible Use SS-25-001.\u201d\nSource: Georgia Technology Authority, \u201cGenerative AI Guidelines for Responsible Use GS-25-001.\u201d\n\nCase 6 \u2014 GDOT AI Policy Statement\n\nI did not find a publicly posted standalone GDOT AI policy document. What I found is an AASHTO article quoting GDOT leadership. According to AASHTO, GDOT has an AI policy statement focused on data governance, risk, and a framework for evaluating new AI projects. That is useful to mention, but I would label it as \u201creported by AASHTO,\u201d not as a formal GDOT source unless you obtain the internal GDOT document.\n\nSource: AASHTO Journal, \u201cAASHTO Survey Reviews Impact of AI on Operations.\u201d\n\nCase 7 \u2014 Other State DOT Example: MnDOT\n\nMnDOT has a clear GenAI standard that applies to employees and third parties working on behalf of MnDOT. It says private, confidential, protected, or otherwise not public data must not be entered into public GenAI tools. It also says GenAI should be supplemental, not a replacement for human judgment, and AI output used for decision-making must be verified for accuracy, relevance, and factuality.\n\nSource: Minnesota DOT, \u201cGenerative Artificial Intelligence \u2014 Standards.\u201d\n\nCase 8 \u2014 Risk Management Framework: NIST AI RMF\n\nNIST AI Risk Management Framework is not a transportation-specific regulation, and it is voluntary, but it is a major federal reference framework for managing AI risk. It is useful when explaining why project teams should think in terms of trustworthiness, governance, risk mapping, measurement, and monitoring.\n\nSource: NIST, \u201cAI Risk Management Framework.\u201d\n\nPractical takeaway for consultants\n\nUse only client-approved and company-approved AI tools. Do not upload confidential, sensitive, security-related, PII, or nonpublic client data into public AI systems. Keep humans in the loop. Verify AI outputs, citations, numbers, assumptions, and sources. For government-client deliverables, treat AI as drafting, research, QA/QC, and workflow support \u2014 not as the final authority.\n\n---"
+  },
+  {
+    "number": 17,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "Government AI Rules \u2014 Continued"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "Case 3 \u2014 U.S. DOT AI Direction\nU.S. DOT supports AI for transportation safety, innovation, automated systems, traffic management, internal operations, research, citizen-facing services, NLP, computer vision, and predictive analytics. \nU.S. DOT also links its AI strategy to OMB M-25-21 compliance planning.\nSource: U.S. DOT, \u201cArtificial Intelligence Activities.\u201d\n\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      },
+      {
+        "type": "text",
+        "content": "Case 4 \u2014 FHWA AI Deployment Center of Excellence\nFHWA created the AI Deployment Center of Excellence as a national resource to guide AI adoption across surface transportation. \nThe focus is not \u201cuse AI casually\u201d; it is coordinated adoption, best practices, lower deployment risk, workforce development, and AI use cases that improve planning, operations, maintenance, and investment decisions.\nSource: FHWA, \u201cArtificial Intelligence Deployment Center of Excellence.\u201d"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 18\n\n## Page 18 \u2014 AI Use for Government-Client Projects: Current Rules and Guardrails\n[Original label: Slide \u2014 AI Use for Government-Client Projects: Current Rules and Guardrails]\n\nAI is not generally banned in government transportation work, but it is increasingly controlled by agency policy, procurement rules, data protection rules, and human-review requirements.\n\nCase 1 \u2014 Federal AI Use Policy: OMB M-25-21\n\nFederal agencies are encouraged to adopt AI, but they must manage it through governance, risk management, transparency, and public trust. OMB M-25-21 tells agencies to accelerate AI use while maintaining safeguards for privacy, civil rights, civil liberties, and high-impact AI use cases.\n\nSource: White House / OMB, \u201cM-25-21: Accelerating Federal Use of AI through Innovation, Governance, and Public Trust.\u201d\n\nCase 2 \u2014 Federal AI Procurement: OMB M-25-22\n\nWhen federal agencies buy AI systems or AI services, they need to consider performance, risk, competition, vendor lock-in, government data rights, privacy, cybersecurity, and cross-functional review. This matters to consultants because AI-related tools or deliverables may be treated as part of federal technology acquisition or government data use.\n\nSource: White House / OMB, \u201cM-25-22: Driving Efficient Acquisition of Artificial Intelligence in Government.\u201d\n\nCase 3 \u2014 U.S. DOT AI Direction\n\nU.S. DOT supports AI for transportation safety, innovation, automated systems, traffic management, internal operations, research, citizen-facing services, NLP, computer vision, and predictive analytics. U.S. DOT also links its AI strategy to OMB M-25-21 compliance planning.\n\nSource: U.S. DOT, \u201cArtificial Intelligence Activities.\u201d\n\nCase 4 \u2014 FHWA AI Deployment Center of Excellence\n\nFHWA created the AI Deployment Center of Excellence as a national resource to guide AI adoption across surface transportation. The focus is not \u201cuse AI casually\u201d; it is coordinated adoption, best practices, lower deployment risk, workforce development, and AI use cases that improve planning, operations, maintenance, and investment decisions.\n\nSource: FHWA, \u201cArtificial Intelligence Deployment Center of Excellence.\u201d\n\nCase 5 \u2014 Georgia State Government / GTA GenAI Policy\n\nGeorgia Technology Authority has a statewide Generative AI Responsible Use policy, effective July 1, 2025, covering responsible use, development, procurement, and governance of GenAI within Georgia executive branch agencies. The Georgia guidelines also say state employees should use pre-vetted tools, record prompts, review AI-generated content, and keep a human-in-the-loop approach.\n\nSource: Georgia Technology Authority, \u201cGenerative AI Responsible Use SS-25-001.\u201d\nSource: Georgia Technology Authority, \u201cGenerative AI Guidelines for Responsible Use GS-25-001.\u201d\n\nCase 6 \u2014 GDOT AI Policy Statement\n\nI did not find a publicly posted standalone GDOT AI policy document. What I found is an AASHTO article quoting GDOT leadership. According to AASHTO, GDOT has an AI policy statement focused on data governance, risk, and a framework for evaluating new AI projects. That is useful to mention, but I would label it as \u201creported by AASHTO,\u201d not as a formal GDOT source unless you obtain the internal GDOT document.\n\nSource: AASHTO Journal, \u201cAASHTO Survey Reviews Impact of AI on Operations.\u201d\n\nCase 7 \u2014 Other State DOT Example: MnDOT\n\nMnDOT has a clear GenAI standard that applies to employees and third parties working on behalf of MnDOT. It says private, confidential, protected, or otherwise not public data must not be entered into public GenAI tools. It also says GenAI should be supplemental, not a replacement for human judgment, and AI output used for decision-making must be verified for accuracy, relevance, and factuality.\n\nSource: Minnesota DOT, \u201cGenerative Artificial Intelligence \u2014 Standards.\u201d\n\nCase 8 \u2014 Risk Management Framework: NIST AI RMF\n\nNIST AI Risk Management Framework is not a transportation-specific regulation, and it is voluntary, but it is a major federal reference framework for managing AI risk. It is useful when explaining why project teams should think in terms of trustworthiness, governance, risk mapping, measurement, and monitoring.\n\nSource: NIST, \u201cAI Risk Management Framework.\u201d\n\nPractical takeaway for consultants\n\nUse only client-approved and company-approved AI tools. Do not upload confidential, sensitive, security-related, PII, or nonpublic client data into public AI systems. Keep humans in the loop. Verify AI outputs, citations, numbers, assumptions, and sources. For government-client deliverables, treat AI as drafting, research, QA/QC, and workflow support \u2014 not as the final authority.\n\n---"
+  },
+  {
+    "number": 18,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "Government AI Rules \u2014 Continued"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "\nCase 6 \u2014 GDOT AI Policy Statement\nI did not find a publicly posted standalone GDOT AI policy document. What I found is an AASHTO article quoting GDOT leadership. According to AASHTO, GDOT has an AI policy statement focused on data governance, risk, and a framework for evaluating new AI projects. That is useful to mention, but I would label it as \u201creported by AASHTO,\u201d not as a formal GDOT source unless you obtain the internal GDOT document.\nSource: AASHTO Journal, \u201cAASHTO Survey Reviews Impact of AI on Operations.\u201d"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      },
+      {
+        "type": "text",
+        "content": "\nCase 5 \u2014 Georgia State Government / GTA GenAI Policy\nGeorgia Technology Authority has a statewide Generative AI Responsible Use policy, effective July 1, 2025, covering responsible use, development, procurement, and governance of GenAI within Georgia executive branch agencies. The Georgia guidelines also say state employees should use pre-vetted tools, record prompts, review AI-generated content, and keep a human-in-the-loop approach.\n\nSource: Georgia Technology Authority, \u201cGenerative AI Responsible Use SS-25-001.\u201d\nSource: Georgia Technology Authority, \u201cGenerative AI Guidelines for Responsible Use GS-25-001.\u201d"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 18\n\n## Page 18 \u2014 AI Use for Government-Client Projects: Current Rules and Guardrails\n[Original label: Slide \u2014 AI Use for Government-Client Projects: Current Rules and Guardrails]\n\nAI is not generally banned in government transportation work, but it is increasingly controlled by agency policy, procurement rules, data protection rules, and human-review requirements.\n\nCase 1 \u2014 Federal AI Use Policy: OMB M-25-21\n\nFederal agencies are encouraged to adopt AI, but they must manage it through governance, risk management, transparency, and public trust. OMB M-25-21 tells agencies to accelerate AI use while maintaining safeguards for privacy, civil rights, civil liberties, and high-impact AI use cases.\n\nSource: White House / OMB, \u201cM-25-21: Accelerating Federal Use of AI through Innovation, Governance, and Public Trust.\u201d\n\nCase 2 \u2014 Federal AI Procurement: OMB M-25-22\n\nWhen federal agencies buy AI systems or AI services, they need to consider performance, risk, competition, vendor lock-in, government data rights, privacy, cybersecurity, and cross-functional review. This matters to consultants because AI-related tools or deliverables may be treated as part of federal technology acquisition or government data use.\n\nSource: White House / OMB, \u201cM-25-22: Driving Efficient Acquisition of Artificial Intelligence in Government.\u201d\n\nCase 3 \u2014 U.S. DOT AI Direction\n\nU.S. DOT supports AI for transportation safety, innovation, automated systems, traffic management, internal operations, research, citizen-facing services, NLP, computer vision, and predictive analytics. U.S. DOT also links its AI strategy to OMB M-25-21 compliance planning.\n\nSource: U.S. DOT, \u201cArtificial Intelligence Activities.\u201d\n\nCase 4 \u2014 FHWA AI Deployment Center of Excellence\n\nFHWA created the AI Deployment Center of Excellence as a national resource to guide AI adoption across surface transportation. The focus is not \u201cuse AI casually\u201d; it is coordinated adoption, best practices, lower deployment risk, workforce development, and AI use cases that improve planning, operations, maintenance, and investment decisions.\n\nSource: FHWA, \u201cArtificial Intelligence Deployment Center of Excellence.\u201d\n\nCase 5 \u2014 Georgia State Government / GTA GenAI Policy\n\nGeorgia Technology Authority has a statewide Generative AI Responsible Use policy, effective July 1, 2025, covering responsible use, development, procurement, and governance of GenAI within Georgia executive branch agencies. The Georgia guidelines also say state employees should use pre-vetted tools, record prompts, review AI-generated content, and keep a human-in-the-loop approach.\n\nSource: Georgia Technology Authority, \u201cGenerative AI Responsible Use SS-25-001.\u201d\nSource: Georgia Technology Authority, \u201cGenerative AI Guidelines for Responsible Use GS-25-001.\u201d\n\nCase 6 \u2014 GDOT AI Policy Statement\n\nI did not find a publicly posted standalone GDOT AI policy document. What I found is an AASHTO article quoting GDOT leadership. According to AASHTO, GDOT has an AI policy statement focused on data governance, risk, and a framework for evaluating new AI projects. That is useful to mention, but I would label it as \u201creported by AASHTO,\u201d not as a formal GDOT source unless you obtain the internal GDOT document.\n\nSource: AASHTO Journal, \u201cAASHTO Survey Reviews Impact of AI on Operations.\u201d\n\nCase 7 \u2014 Other State DOT Example: MnDOT\n\nMnDOT has a clear GenAI standard that applies to employees and third parties working on behalf of MnDOT. It says private, confidential, protected, or otherwise not public data must not be entered into public GenAI tools. It also says GenAI should be supplemental, not a replacement for human judgment, and AI output used for decision-making must be verified for accuracy, relevance, and factuality.\n\nSource: Minnesota DOT, \u201cGenerative Artificial Intelligence \u2014 Standards.\u201d\n\nCase 8 \u2014 Risk Management Framework: NIST AI RMF\n\nNIST AI Risk Management Framework is not a transportation-specific regulation, and it is voluntary, but it is a major federal reference framework for managing AI risk. It is useful when explaining why project teams should think in terms of trustworthiness, governance, risk mapping, measurement, and monitoring.\n\nSource: NIST, \u201cAI Risk Management Framework.\u201d\n\nPractical takeaway for consultants\n\nUse only client-approved and company-approved AI tools. Do not upload confidential, sensitive, security-related, PII, or nonpublic client data into public AI systems. Keep humans in the loop. Verify AI outputs, citations, numbers, assumptions, and sources. For government-client deliverables, treat AI as drafting, research, QA/QC, and workflow support \u2014 not as the final authority.\n\n---"
+  },
+  {
+    "number": 19,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "Government AI Rules \u2014 Continued"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "Case 8 \u2014 Risk Management Framework: NIST AI RMF\nNIST AI Risk Management Framework is not a transportation-specific regulation, and it is voluntary, but it is a major federal reference framework for managing AI risk. It is useful when explaining why project teams should think in terms of trustworthiness, governance, risk mapping, measurement, and monitoring.\nSource: NIST, \u201cAI Risk Management Framework.\u201d"
+      },
+      {
+        "type": "text",
+        "content": "Practical takeaway for consultants\nUse only client-approved and company-approved AI tools. Do not upload confidential, sensitive, security-related, PII, or nonpublic client data into public AI systems. \n\nKeep humans in the loop. Verify AI outputs, citations, numbers, assumptions, and sources. \n\nFor government-client deliverables, treat AI as drafting, research, QA/QC, and workflow support \u2014 not as the final authority."
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      },
+      {
+        "type": "text",
+        "content": "\nCase 7 \u2014 Other State DOT Example: MnDOT\nMnDOT has a clear GenAI standard that applies to employees and third parties working on behalf of MnDOT. It says private, confidential, protected, or otherwise not public data must not be entered into public GenAI tools. It also says GenAI should be supplemental, not a replacement for human judgment, and AI output used for decision-making must be verified for accuracy, relevance, and factuality.\nSource: Minnesota DOT, \u201cGenerative Artificial Intelligence \u2014 Standards.\u201d\n"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 18\n\n## Page 18 \u2014 AI Use for Government-Client Projects: Current Rules and Guardrails\n[Original label: Slide \u2014 AI Use for Government-Client Projects: Current Rules and Guardrails]\n\nAI is not generally banned in government transportation work, but it is increasingly controlled by agency policy, procurement rules, data protection rules, and human-review requirements.\n\nCase 1 \u2014 Federal AI Use Policy: OMB M-25-21\n\nFederal agencies are encouraged to adopt AI, but they must manage it through governance, risk management, transparency, and public trust. OMB M-25-21 tells agencies to accelerate AI use while maintaining safeguards for privacy, civil rights, civil liberties, and high-impact AI use cases.\n\nSource: White House / OMB, \u201cM-25-21: Accelerating Federal Use of AI through Innovation, Governance, and Public Trust.\u201d\n\nCase 2 \u2014 Federal AI Procurement: OMB M-25-22\n\nWhen federal agencies buy AI systems or AI services, they need to consider performance, risk, competition, vendor lock-in, government data rights, privacy, cybersecurity, and cross-functional review. This matters to consultants because AI-related tools or deliverables may be treated as part of federal technology acquisition or government data use.\n\nSource: White House / OMB, \u201cM-25-22: Driving Efficient Acquisition of Artificial Intelligence in Government.\u201d\n\nCase 3 \u2014 U.S. DOT AI Direction\n\nU.S. DOT supports AI for transportation safety, innovation, automated systems, traffic management, internal operations, research, citizen-facing services, NLP, computer vision, and predictive analytics. U.S. DOT also links its AI strategy to OMB M-25-21 compliance planning.\n\nSource: U.S. DOT, \u201cArtificial Intelligence Activities.\u201d\n\nCase 4 \u2014 FHWA AI Deployment Center of Excellence\n\nFHWA created the AI Deployment Center of Excellence as a national resource to guide AI adoption across surface transportation. The focus is not \u201cuse AI casually\u201d; it is coordinated adoption, best practices, lower deployment risk, workforce development, and AI use cases that improve planning, operations, maintenance, and investment decisions.\n\nSource: FHWA, \u201cArtificial Intelligence Deployment Center of Excellence.\u201d\n\nCase 5 \u2014 Georgia State Government / GTA GenAI Policy\n\nGeorgia Technology Authority has a statewide Generative AI Responsible Use policy, effective July 1, 2025, covering responsible use, development, procurement, and governance of GenAI within Georgia executive branch agencies. The Georgia guidelines also say state employees should use pre-vetted tools, record prompts, review AI-generated content, and keep a human-in-the-loop approach.\n\nSource: Georgia Technology Authority, \u201cGenerative AI Responsible Use SS-25-001.\u201d\nSource: Georgia Technology Authority, \u201cGenerative AI Guidelines for Responsible Use GS-25-001.\u201d\n\nCase 6 \u2014 GDOT AI Policy Statement\n\nI did not find a publicly posted standalone GDOT AI policy document. What I found is an AASHTO article quoting GDOT leadership. According to AASHTO, GDOT has an AI policy statement focused on data governance, risk, and a framework for evaluating new AI projects. That is useful to mention, but I would label it as \u201creported by AASHTO,\u201d not as a formal GDOT source unless you obtain the internal GDOT document.\n\nSource: AASHTO Journal, \u201cAASHTO Survey Reviews Impact of AI on Operations.\u201d\n\nCase 7 \u2014 Other State DOT Example: MnDOT\n\nMnDOT has a clear GenAI standard that applies to employees and third parties working on behalf of MnDOT. It says private, confidential, protected, or otherwise not public data must not be entered into public GenAI tools. It also says GenAI should be supplemental, not a replacement for human judgment, and AI output used for decision-making must be verified for accuracy, relevance, and factuality.\n\nSource: Minnesota DOT, \u201cGenerative Artificial Intelligence \u2014 Standards.\u201d\n\nCase 8 \u2014 Risk Management Framework: NIST AI RMF\n\nNIST AI Risk Management Framework is not a transportation-specific regulation, and it is voluntary, but it is a major federal reference framework for managing AI risk. It is useful when explaining why project teams should think in terms of trustworthiness, governance, risk mapping, measurement, and monitoring.\n\nSource: NIST, \u201cAI Risk Management Framework.\u201d\n\nPractical takeaway for consultants\n\nUse only client-approved and company-approved AI tools. Do not upload confidential, sensitive, security-related, PII, or nonpublic client data into public AI systems. Keep humans in the loop. Verify AI outputs, citations, numbers, assumptions, and sources. For government-client deliverables, treat AI as drafting, research, QA/QC, and workflow support \u2014 not as the final authority.\n\n---"
+  },
+  {
+    "number": 20,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "Government AI Rules \u2014 Continued"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      },
+      {
+        "type": "text",
+        "content": "Practical takeaway for consultants\nUse only client-approved and company-approved AI tools. \n\nDo not upload confidential, sensitive, security-related, PII, or nonpublic client data into public AI systems. \n\nKeep humans in the loop. Verify AI outputs, citations, numbers, assumptions, and sources. \n\nFor government-client deliverables, treat AI as drafting, research, QA/QC, and workflow support \u2014 not as the final authority."
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 18\n\n## Page 18 \u2014 AI Use for Government-Client Projects: Current Rules and Guardrails\n[Original label: Slide \u2014 AI Use for Government-Client Projects: Current Rules and Guardrails]\n\nAI is not generally banned in government transportation work, but it is increasingly controlled by agency policy, procurement rules, data protection rules, and human-review requirements.\n\nCase 1 \u2014 Federal AI Use Policy: OMB M-25-21\n\nFederal agencies are encouraged to adopt AI, but they must manage it through governance, risk management, transparency, and public trust. OMB M-25-21 tells agencies to accelerate AI use while maintaining safeguards for privacy, civil rights, civil liberties, and high-impact AI use cases.\n\nSource: White House / OMB, \u201cM-25-21: Accelerating Federal Use of AI through Innovation, Governance, and Public Trust.\u201d\n\nCase 2 \u2014 Federal AI Procurement: OMB M-25-22\n\nWhen federal agencies buy AI systems or AI services, they need to consider performance, risk, competition, vendor lock-in, government data rights, privacy, cybersecurity, and cross-functional review. This matters to consultants because AI-related tools or deliverables may be treated as part of federal technology acquisition or government data use.\n\nSource: White House / OMB, \u201cM-25-22: Driving Efficient Acquisition of Artificial Intelligence in Government.\u201d\n\nCase 3 \u2014 U.S. DOT AI Direction\n\nU.S. DOT supports AI for transportation safety, innovation, automated systems, traffic management, internal operations, research, citizen-facing services, NLP, computer vision, and predictive analytics. U.S. DOT also links its AI strategy to OMB M-25-21 compliance planning.\n\nSource: U.S. DOT, \u201cArtificial Intelligence Activities.\u201d\n\nCase 4 \u2014 FHWA AI Deployment Center of Excellence\n\nFHWA created the AI Deployment Center of Excellence as a national resource to guide AI adoption across surface transportation. The focus is not \u201cuse AI casually\u201d; it is coordinated adoption, best practices, lower deployment risk, workforce development, and AI use cases that improve planning, operations, maintenance, and investment decisions.\n\nSource: FHWA, \u201cArtificial Intelligence Deployment Center of Excellence.\u201d\n\nCase 5 \u2014 Georgia State Government / GTA GenAI Policy\n\nGeorgia Technology Authority has a statewide Generative AI Responsible Use policy, effective July 1, 2025, covering responsible use, development, procurement, and governance of GenAI within Georgia executive branch agencies. The Georgia guidelines also say state employees should use pre-vetted tools, record prompts, review AI-generated content, and keep a human-in-the-loop approach.\n\nSource: Georgia Technology Authority, \u201cGenerative AI Responsible Use SS-25-001.\u201d\nSource: Georgia Technology Authority, \u201cGenerative AI Guidelines for Responsible Use GS-25-001.\u201d\n\nCase 6 \u2014 GDOT AI Policy Statement\n\nI did not find a publicly posted standalone GDOT AI policy document. What I found is an AASHTO article quoting GDOT leadership. According to AASHTO, GDOT has an AI policy statement focused on data governance, risk, and a framework for evaluating new AI projects. That is useful to mention, but I would label it as \u201creported by AASHTO,\u201d not as a formal GDOT source unless you obtain the internal GDOT document.\n\nSource: AASHTO Journal, \u201cAASHTO Survey Reviews Impact of AI on Operations.\u201d\n\nCase 7 \u2014 Other State DOT Example: MnDOT\n\nMnDOT has a clear GenAI standard that applies to employees and third parties working on behalf of MnDOT. It says private, confidential, protected, or otherwise not public data must not be entered into public GenAI tools. It also says GenAI should be supplemental, not a replacement for human judgment, and AI output used for decision-making must be verified for accuracy, relevance, and factuality.\n\nSource: Minnesota DOT, \u201cGenerative Artificial Intelligence \u2014 Standards.\u201d\n\nCase 8 \u2014 Risk Management Framework: NIST AI RMF\n\nNIST AI Risk Management Framework is not a transportation-specific regulation, and it is voluntary, but it is a major federal reference framework for managing AI risk. It is useful when explaining why project teams should think in terms of trustworthiness, governance, risk mapping, measurement, and monitoring.\n\nSource: NIST, \u201cAI Risk Management Framework.\u201d\n\nPractical takeaway for consultants\n\nUse only client-approved and company-approved AI tools. Do not upload confidential, sensitive, security-related, PII, or nonpublic client data into public AI systems. Keep humans in the loop. Verify AI outputs, citations, numbers, assumptions, and sources. For government-client deliverables, treat AI as drafting, research, QA/QC, and workflow support \u2014 not as the final authority.\n\n---"
+  },
+  {
+    "number": 21,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "Sources for AI Governance and Regulation"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "OMB M-25-21 \u2014 Accelerating Federal Use of AI through Innovation, Governance, and Public Trust\nhttps://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf\nOMB M-25-22 \u2014 Driving Efficient Acquisition of Artificial Intelligence in Government\nhttps://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-22-Driving-Efficient-Acquisition-of-Artificial-Intelligence-in-Government.pdf\nU.S. DOT \u2014 Artificial Intelligence Activities\nhttps://www.transportation.gov/AI\nFHWA \u2014 Artificial Intelligence Deployment Center of Excellence\nhttps://highways.dot.gov/ai-coe\nFHWA \u2014 AI-COE Launch Page\nhttps://highways.dot.gov/newsroom/ai-coe-launch\nITS Joint Program Office \u2014 Artificial Intelligence Program\nhttps://www.its.dot.gov/research-areas/Artificial-Intelligence/\nGeorgia Technology Authority \u2014 Generative AI Responsible Use SS-25-001\nhttps://gta-psg.georgia.gov/psg/generative-ai-responsible-use-ss-25-001\nGeorgia Technology Authority \u2014 Generative AI Guidelines for Responsible Use GS-25-001\nhttps://gta-psg.georgia.gov/psg/generative-ai-guidelines-responsible-use-gs-25-001-0\n"
+      },
+      {
+        "type": "text",
+        "content": "Georgia Technology Authority \u2014 Artificial Intelligence Program\nhttps://gta.georgia.gov/policies-and-programs/artificial-intelligence\nGeorgia Office of Artificial Intelligence \u2014 Guidance for State Organizations\nhttps://ai.georgia.gov/guidance/guidance-state-organizations\nAASHTO Journal \u2014 AASHTO Survey Reviews Impact of AI on Operations\nhttps://aashtojournal.transportation.org/aashto-survey-reviews-impact-of-ai-on-operations/\nAASHTO / NOCoE \u2014 AI Adoption and Implementation in Transportation Operations Dashboard\nhttps://transportationops.org/aashto-ia-dashboard\nMnDOT \u2014 Generative Artificial Intelligence Standard IT-003\nhttps://www.dot.state.mn.us/policy/it-data/it-003.html\nMinnesota IT Services \u2014 Public Artificial Intelligence Services Security Standard\nhttps://mn.gov/mnit/government/policies/security/ai-standard/index.jsp\nNIST \u2014 AI Risk Management Framework\nhttps://www.nist.gov/itl/ai-risk-management-framework\nNIST \u2014 AI Risk Management Framework 1.0 PDF\nhttps://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 19\n\n## Page 19 \u2014 Source List for AI Governance and Regulation\n[Original source-link list preserved below]\n\nOMB M-25-21 \u2014 Accelerating Federal Use of AI through Innovation, Governance, and Public Trust\nhttps://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-21-Accelerating-Federal-Use-of-AI-through-Innovation-Governance-and-Public-Trust.pdf\nOMB M-25-22 \u2014 Driving Efficient Acquisition of Artificial Intelligence in Government\nhttps://www.whitehouse.gov/wp-content/uploads/2025/02/M-25-22-Driving-Efficient-Acquisition-of-Artificial-Intelligence-in-Government.pdf\nU.S. DOT \u2014 Artificial Intelligence Activities\nhttps://www.transportation.gov/AI\nFHWA \u2014 Artificial Intelligence Deployment Center of Excellence\nhttps://highways.dot.gov/ai-coe\nFHWA \u2014 AI-COE Launch Page\nhttps://highways.dot.gov/newsroom/ai-coe-launch\nITS Joint Program Office \u2014 Artificial Intelligence Program\nhttps://www.its.dot.gov/research-areas/Artificial-Intelligence/\nGeorgia Technology Authority \u2014 Generative AI Responsible Use SS-25-001\nhttps://gta-psg.georgia.gov/psg/generative-ai-responsible-use-ss-25-001\nGeorgia Technology Authority \u2014 Generative AI Guidelines for Responsible Use GS-25-001\nhttps://gta-psg.georgia.gov/psg/generative-ai-guidelines-responsible-use-gs-25-001-0\nGeorgia Technology Authority \u2014 Artificial Intelligence Program\nhttps://gta.georgia.gov/policies-and-programs/artificial-intelligence\nGeorgia Office of Artificial Intelligence \u2014 Guidance for State Organizations\nhttps://ai.georgia.gov/guidance/guidance-state-organizations\nAASHTO Journal \u2014 AASHTO Survey Reviews Impact of AI on Operations\nhttps://aashtojournal.transportation.org/aashto-survey-reviews-impact-of-ai-on-operations/\nAASHTO / NOCoE \u2014 AI Adoption and Implementation in Transportation Operations Dashboard\nhttps://transportationops.org/aashto-ia-dashboard\nMnDOT \u2014 Generative Artificial Intelligence Standard IT-003\nhttps://www.dot.state.mn.us/policy/it-data/it-003.html\nMinnesota IT Services \u2014 Public Artificial Intelligence Services Security Standard\nhttps://mn.gov/mnit/government/policies/security/ai-standard/index.jsp\nNIST \u2014 AI Risk Management Framework\nhttps://www.nist.gov/itl/ai-risk-management-framework\nNIST \u2014 AI Risk Management Framework 1.0 PDF\nhttps://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf\n---"
+  },
+  {
+    "number": 22,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "Industry-Specific Opportunities"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "AI can improve the workflows around transportation planning and engineering tools.\nWhere AI Can Help\n\u2022 Literature reviews and technical scans\u000b\u2022 Project documentation and meeting summaries\u000b\u2022 Model documentation and version tracking\u000b\u2022 Scenario planning support\u000b\u2022 QA/QC checks and consistency reviews\u000b\u2022 Dashboard and visualization prototyping\u000b\u2022 Asset risk and resilience analysis support\u000b\u2022 Internal knowledge management\u000b\u2022 Training and onboarding junior staff\n"
+      },
+      {
+        "type": "text",
+        "content": "Important Distinction\nAI may not replace specialized tools like travel demand models, GIS, Synchro, HCS, or design software.\nBut it can make the work around those tools much faster: preparing inputs, reviewing outputs, documenting assumptions, and communicating results.\nKey Message\nAI does not replace the technical workflow. It makes the workflow easier to manage, review, and explain.\n\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 20\n\n## Page 20 \u2014 Industry-Specific Opportunities\n[Original label: Slide 13 \u2014 Industry-Specific Opportunities]\nWhere transportation planning and engineering can benefit\nPotential opportunities:\nFaster literature reviews\nSmarter project documentation\nAutomated QA/QC support\nBetter public engagement summaries\nFaster dashboard and visualization prototyping\nModel documentation and version tracking\nScenario planning support\nAsset risk and resilience analysis support\nInternal knowledge management\nTraining junior staff\nImportant distinction:\nAI may not replace specialized tools like travel demand models, GIS, Synchro, or HCS\nBut it can make the workflows around those tools much faster\n---"
+  },
+  {
+    "number": 23,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "Will AI Replace My Job?"
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "What Still Needs Humans\n\u2022 Professional judgment\u000b\u2022 Local context\u000b\u2022 Client communication\u000b\u2022 Assumption review\u000b\u2022 QA/QC\u000b\u2022 Ethical and legal accountability\u000b\u2022 Final decisions and recommendations\nHuman-in-the-Loop Role\nAI can draft, organize, search, summarize, calculate, and prototype.\nHumans define the problem, verify the sources, interpret the results, and take responsibility for the final deliverable."
+      },
+      {
+        "type": "text",
+        "content": "Main Message\nAI will replace some tasks, but not the full professional role \u2014 especially in transportation planning and engineering.\nTasks AI Can Help Automate\n\u2022 Routine writing and summaries\u000b\u2022 Basic data cleaning\u000b\u2022 Standard report sections\u000b\u2022 Simple coding and scripting\u000b\u2022 Initial research and document review\n\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 22\n\n## Page 22 \u2014 Will AI Replace My Job?\n[Original label: Slide X \u2014 Will AI Replace My Job?]\nMain message:\n AI will replace some tasks, but not the full professional role \u2014 at least not in transportation planning and engineering today.\nConcerns:\nRoutine writing may be automated\nBasic summaries may be automated\nSimple data cleaning may be automated\nStandard report sections may be automated\nBasic coding and scripting may be automated\nJunior-level research tasks may become faster and cheaper\nWhat still needs humans:\nProfessional judgment\nLocal context\nClient communication\nEngineering responsibility\nAssumption review\nQA/QC\nEthical and legal accountability\nFinal decisions and recommendations\nHuman-in-the-loop role:\n AI can draft, organize, search, summarize, calculate, and prototype.\n Humans still define the problem, check the assumptions, verify the sources, interpret the results, and take responsibility for the final deliverable.\nOpportunities for consultants:\nProduce faster first drafts\nReview more documents in less time\nBuild better internal knowledge bases\nPrototype dashboards and tools faster\nLearn new technical skills faster\nAutomate repetitive workflows\nSupport more projects with the same team\nMove from manual production work toward higher-value advisory work\nKey takeaway:\n AI may not replace transportation professionals directly, but professionals who use AI well will outperform those who do not.\n\n---"
+  },
+  {
+    "number": 24,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "Opportunities for Consultants and Future Trends "
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "AI can help consultants work faster, reduce repetitive production work, and focus more on higher-value advisory tasks.\nConsulting Opportunities\n\u2022 Faster first drafts and document reviews\u000b\u2022 Better internal knowledge bases\u000b\u2022 Automated repetitive workflows\u000b\u2022 Faster dashboard and tool prototyping\u000b\u2022 Faster technical learning\u000b\u2022 Support for more projects with the same team\nFuture Trends\n\u2022 AI embedded in Office, GIS, modeling platforms, and project management tools\u000b\u2022 More multimodal AI: text, maps, images, tables, audio, and video together\u000b\u2022 More RAG-based internal knowledge systems\u000b\u2022 Better integration with enterprise data systems\u000b\u2022 More formal AI governance from companies and agencies\u000b\u2022 AI-assisted coding, reporting, and dashboard generation\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      },
+      {
+        "type": "text",
+        "content": "Transportation-Specific Future\n\u2022 AI-assisted scenario analysis\u000b\u2022 AI-supported resilience and risk screening\u000b\u2022 Natural language access to transportation datasets\u000b\u2022 Faster model QA/QC and documentation\u000b\u2022 Better public-facing communication tools\nKey Takeaway\nAI may not replace transportation professionals directly, but professionals who use AI well will outperform those who do not.\n"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 22\n\n## Page 22 \u2014 Will AI Replace My Job?\n[Original label: Slide X \u2014 Will AI Replace My Job?]\nMain message:\n AI will replace some tasks, but not the full professional role \u2014 at least not in transportation planning and engineering today.\nConcerns:\nRoutine writing may be automated\nBasic summaries may be automated\nSimple data cleaning may be automated\nStandard report sections may be automated\nBasic coding and scripting may be automated\nJunior-level research tasks may become faster and cheaper\nWhat still needs humans:\nProfessional judgment\nLocal context\nClient communication\nEngineering responsibility\nAssumption review\nQA/QC\nEthical and legal accountability\nFinal decisions and recommendations\nHuman-in-the-loop role:\n AI can draft, organize, search, summarize, calculate, and prototype.\n Humans still define the problem, check the assumptions, verify the sources, interpret the results, and take responsibility for the final deliverable.\nOpportunities for consultants:\nProduce faster first drafts\nReview more documents in less time\nBuild better internal knowledge bases\nPrototype dashboards and tools faster\nLearn new technical skills faster\nAutomate repetitive workflows\nSupport more projects with the same team\nMove from manual production work toward higher-value advisory work\nKey takeaway:\n AI may not replace transportation professionals directly, but professionals who use AI well will outperform those who do not.\n\n---"
+  },
+  {
+    "number": 25,
+    "title": "",
+    "content": [
+      {
+        "type": "text",
+        "content": "My View: How We Should Use AI in Our Industry "
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": ""
+      },
+      {
+        "type": "text",
+        "content": "My View: How We Should Use AI in Our Industry\nAI is a workflow multiplier, not a standalone expert.\nTransportation work depends on data, assumptions, local context, engineering judgment, and stakeholder coordination. AI can help organize, accelerate, and explain this work, but it should be used carefully, practically, and transparently.\nRecommended Next Steps\n\u2022 Start with low-risk internal tasks\u000b\u2022 Use approved tools only\u000b\u2022 Verify every important output\u000b\u2022 Build reusable prompt templates and examples\u000b\u2022 Identify repeatable workflows, not just one-time experiments\u000b\u2022 Treat AI as part of quality-controlled project delivery\n"
+      },
+      {
+        "type": "text",
+        "content": "Final Message\nAI will not replace transportation professionals.\nBut transportation professionals who understand both the technical domain and how to use AI will have a major advantage.\nThe strongest users will be domain experts who can prompt, verify, and operationalize AI.\n"
+      },
+      {
+        "type": "text",
+        "content": "EXPANDED CONTENT DRAFT \u2022 content first; structure and design later"
+      }
+    ],
+    "images": [],
+    "notes": "Source: ai_ppt_full_content_dump_numbered.md \u2014 Page 21\n\n## Page 21 \u2014 My View: Where AI Fits in Our Industry\n[Original label: Slide 14 \u2014 My View: Where AI Fits in Our Industry]\nAI is a workflow multiplier, not a standalone expert\nCore viewpoint:\nTransportation work depends on data, assumptions, local context, engineering judgment, and stakeholder coordination\nAI can help organize, accelerate, and explain this work\nThe biggest value is not replacing technical analysis; it is reducing friction around analysis\nPersonal take:\nAI will reward people who understand both the technical domain and how to structure AI-assisted workflows\nThe strongest users will be \u201cdomain experts who can prompt, verify, and operationalize AI\u201d\n\n---"
+  }
+]

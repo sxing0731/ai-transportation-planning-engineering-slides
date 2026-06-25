@@ -1,0 +1,10 @@
+# Local visual QA renders
+.qa/
+
+# Legacy pre-brand redesign outputs
+AI-Transportation-McKinsey-Editable.html
+AI in Transportation Planning and Engineering - McKinsey Redesigned Editable.pptx
+
+# OS/editor files
+Thumbs.db
+.DS_Store
