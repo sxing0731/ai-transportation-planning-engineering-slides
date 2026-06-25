@@ -1831,20 +1831,8 @@
     margin: 0;
     overflow: hidden;
     background: var(--light-grey);
-    border: 1px solid var(--light-grey);
+    border: 0;
     position: relative;
-  }
-  .mck-image-panel::after {
-    content: "AI-ASSISTED TRANSPORTATION WORKFLOW";
-    position: absolute;
-    left: 0.75rem;
-    bottom: 0.65rem;
-    background: rgba(24,45,56,.94);
-    color: #fff;
-    padding: 0.32rem 0.48rem;
-    font-size: clamp(0.46rem, 0.62vw, 0.62rem);
-    font-weight: 750;
-    letter-spacing: 0.08em;
   }
   .mck-image-panel img {
     width: 100%;
@@ -2287,6 +2275,238 @@
     letter-spacing: 0.07em;
     margin-top: clamp(1.4rem, 3vh, 2.2rem);
     text-transform: uppercase;
+  }
+
+  /* === EDITORIAL CONSULTING SYSTEM: OPEN LAYOUTS, NOT DASHBOARD CARDS === */
+  #deck.slides-offset > section.slide:not(.mck-cover)::before {
+    border-width: clamp(0.55rem, 1.3vw, 1.15rem);
+    opacity: 0.58;
+  }
+  #deck.slides-offset > section.slide:not(.mck-cover)::after {
+    width: clamp(0.16rem, 0.25vw, 0.24rem);
+    height: clamp(2rem, 7vh, 3.7rem);
+  }
+  .mck-card-grid {
+    gap: clamp(1rem, 2vw, 2rem);
+  }
+  .mck-card {
+    position: relative;
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--line);
+    padding: clamp(0.72rem, 1vw, 1rem) clamp(0.25rem, 0.55vw, 0.55rem) 0;
+  }
+  .mck-card::after {
+    content: attr(data-editorial-index);
+    position: absolute;
+    right: 0.2rem;
+    top: 0.35rem;
+    color: rgba(24,45,56,.28);
+    font-size: clamp(0.48rem, 0.62vw, 0.62rem);
+    font-weight: 750;
+    letter-spacing: .08em;
+  }
+  .mck-card:nth-child(3n+1) { border-top-color: var(--primary-2); }
+  .mck-card:nth-child(3n+2),
+  .mck-card:nth-child(3n+3) { border-top-color: var(--line); }
+  #deck .slide[data-source-slide="15"] .mck-card:last-child,
+  #deck .slide[data-source-slide="20"] .mck-card:first-child,
+  #deck .slide[data-source-slide="25"] .mck-card:last-child {
+    background: rgba(5,229,96,.07);
+    padding-left: clamp(0.75rem, 1.2vw, 1.1rem);
+    padding-right: clamp(0.75rem, 1.2vw, 1.1rem);
+  }
+  #deck .slide[data-source-slide="16"] .mck-card {
+    background: transparent;
+  }
+  .mck-source-note {
+    border-top-color: rgba(24,45,56,.18);
+    font-size: clamp(0.86rem, 1vw, 1rem) !important;
+  }
+
+  .mck-main.has-image {
+    grid-template-columns: minmax(0, 1.02fr) minmax(300px, 0.78fr);
+    gap: clamp(1.2rem, 2.7vw, 2.7rem);
+  }
+  .mck-image-panel {
+    border: 0;
+    background: transparent;
+    overflow: visible;
+  }
+  .mck-image-panel::after {
+    left: 0;
+    bottom: 0;
+    background: transparent;
+    color: var(--navy);
+    padding: 0.35rem 0 0;
+    font-size: clamp(0.42rem, 0.55vw, 0.56rem);
+    border-top: 1px solid rgba(255,255,255,.7);
+  }
+  .mck-image-panel img {
+    box-shadow: none;
+  }
+  #deck .slide[data-source-slide="3"] .mck-image-panel img,
+  #deck .slide[data-source-slide="22"] .mck-image-panel img,
+  #deck .slide[data-source-slide="25"] .mck-image-panel img {
+    object-position: center;
+  }
+
+  .mck-agenda {
+    gap: 0;
+    column-gap: clamp(1.5rem, 2.6vw, 2.6rem);
+  }
+  .mck-agenda-item {
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--line);
+    padding: clamp(0.7rem, 1vw, 0.95rem) 0;
+    gap: clamp(0.7rem, 1vw, 1rem);
+  }
+  .mck-agenda-item:nth-child(1),
+  .mck-agenda-item:nth-child(2) { border-top-color: var(--primary-2); }
+  .mck-agenda-num {
+    font-size: clamp(1.45rem, 2.4vw, 2.3rem);
+    line-height: .9;
+  }
+  .mck-agenda-note {
+    max-width: 76%;
+    margin-left: auto;
+    background: transparent;
+    border: 0;
+    border-top: 2px solid var(--teal);
+    padding: 0.45rem 0 0;
+  }
+  .mck-agenda-note .mck-copy,
+  .mck-agenda-note .mck-subhead {
+    color: var(--navy);
+    text-align: right;
+    font-size: clamp(0.78rem, 0.94vw, 0.94rem) !important;
+  }
+
+  .mck-timeline-intro,
+  .mck-lead {
+    background: transparent;
+    border: 0;
+    border-left: 2px solid var(--primary-2);
+    padding: 0.15rem 0 0.15rem clamp(0.7rem, 1vw, 1rem);
+  }
+  .mck-timeline {
+    gap: clamp(0.8rem, 1.6vw, 1.5rem);
+  }
+  .mck-timeline-card {
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--line);
+    padding: clamp(0.65rem, 0.9vw, 0.9rem) 0 0;
+  }
+  .mck-timeline-card::before {
+    width: clamp(0.55rem, 0.8vw, 0.8rem);
+    height: clamp(0.55rem, 0.8vw, 0.8rem);
+    top: calc(-1 * clamp(0.28rem, 0.4vw, 0.4rem));
+    bottom: auto;
+    border-radius: 50%;
+    background: var(--primary-2);
+  }
+  .mck-timeline-card:nth-child(even)::before { background: var(--teal); }
+
+  .mck-role-grid {
+    gap: clamp(0.9rem, 1.7vw, 1.6rem);
+  }
+  .mck-role-card {
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--line);
+    padding: clamp(0.6rem, 0.9vw, 0.85rem) 0 0;
+  }
+  .mck-role-card:nth-child(1) { border-top-color: var(--primary-2); }
+  .mck-role-index {
+    display: block;
+    margin-bottom: 0.2rem;
+    color: rgba(24,45,56,.35);
+  }
+
+  .mck-concept {
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--line);
+    padding: clamp(0.65rem, 1vw, 0.9rem) 0 0;
+  }
+  .mck-concept-step {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--line);
+    padding: 0.45rem 0.35rem;
+  }
+  .mck-concept-step.is-blue { border-bottom-color: var(--primary-2); }
+  .mck-concept-step.is-green { border-bottom-color: var(--teal); }
+  .mck-balance-mark {
+    background: transparent;
+    color: var(--teal);
+    border: 1px solid var(--navy);
+  }
+  .mck-orbit-center {
+    background: transparent;
+    color: var(--navy);
+    border-bottom: 2px solid var(--teal);
+  }
+  .mck-orbit-node {
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--line);
+  }
+  .mck-concept-shield > span {
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .mck-source-columns {
+    gap: clamp(1.2rem, 2vw, 2rem);
+  }
+  .mck-source-column {
+    background: transparent;
+    border: 0;
+    border-left: 1px solid var(--line);
+    padding: 0 0 0 clamp(0.75rem, 1.1vw, 1rem);
+  }
+  .mck-source-column:first-child {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .mck-stage-grid {
+    gap: clamp(0.65rem, 1.15vw, 1.1rem);
+  }
+  .mck-stage-card {
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--line);
+  }
+  .mck-stage-label {
+    min-height: auto;
+    padding: clamp(0.65rem, 0.9vw, 0.85rem) 0;
+    background: transparent;
+    color: var(--navy);
+    border-bottom: 1px solid var(--line);
+  }
+  .stage-2 .mck-stage-label {
+    background: transparent;
+    color: var(--primary-2);
+  }
+  .stage-3 {
+    background: rgba(5,229,96,.075);
+    padding: 0 clamp(0.7rem, 1vw, 1rem);
+  }
+  .stage-3 .mck-stage-label {
+    background: transparent;
+    color: var(--navy);
+    border-bottom-color: var(--teal);
+  }
+  .mck-stage-body {
+    padding: clamp(0.7rem, 1vw, 0.95rem) 0;
+  }
+  .mck-stage-arrow {
+    font-weight: 500;
   }
   .mck-closing .mck-card { border-top-color: var(--teal); }
   .nav-dots { display: none !important; }

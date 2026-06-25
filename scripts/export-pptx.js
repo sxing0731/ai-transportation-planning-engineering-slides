@@ -59,9 +59,9 @@ const BRAND_LOGO_LIGHT = path.join(projectRoot, "assets", "atkinsrealis-logo-lig
 
 function addBrillianceDevice(slide) {
   [
-    { x: 10.25, y: -3.2, w: 6.1, h: 6.1, color: C.blue, width: 24, transparency: 89 },
-    { x: 10.85, y: -2.65, w: 5.0, h: 5.0, color: C.teal, width: 20, transparency: 91 },
-    { x: 11.35, y: -2.15, w: 4.0, h: 4.0, color: C.line, width: 22, transparency: 80 },
+    { x: 10.25, y: -3.2, w: 6.1, h: 6.1, color: C.blue, width: 10, transparency: 94 },
+    { x: 10.85, y: -2.65, w: 5.0, h: 5.0, color: C.teal, width: 8, transparency: 95 },
+    { x: 11.35, y: -2.15, w: 4.0, h: 4.0, color: C.line, width: 7, transparency: 88 },
   ].forEach((ring) => {
     slide.addShape(pptx.ShapeType.ellipse, {
       x: ring.x,
@@ -79,8 +79,8 @@ function addBrillianceDevice(slide) {
   slide.addShape(pptx.ShapeType.rect, {
     x: 0,
     y: 0.82,
-    w: 0.07,
-    h: 1.0,
+    w: 0.035,
+    h: 0.72,
     fill: { color: C.blue },
     line: { color: C.blue, transparency: 100 },
   });
@@ -424,30 +424,33 @@ function addCard(
   fontSizeOverride = null,
   compactSpacing = false
 ) {
-  const topColor = [C.blue, C.teal, C.navy][index % 3];
-  slide.addShape(pptx.ShapeType.rect, {
+  const topColor = index === 0 ? C.blue : C.line;
+  slide.addShape(pptx.ShapeType.line, {
     x,
     y,
     w,
-    h,
-    fill: { color: C.soft, transparency: 82 },
-    line: { color: C.line, width: 0.8 },
+    h: 0,
+    line: { color: topColor, width: index === 0 ? 1.6 : 0.8 },
   });
-  slide.addShape(pptx.ShapeType.rect, {
-    x,
-    y,
-    w,
-    h: 0.055,
-    fill: { color: topColor },
-    line: { color: topColor, transparency: 100 },
+  slide.addText(String(index + 1).padStart(2, "0"), {
+    x: x + w - 0.38,
+    y: y + 0.08,
+    w: 0.36,
+    h: 0.16,
+    margin: 0,
+    fontFace: "Arial",
+    fontSize: 7,
+    bold: true,
+    align: "right",
+    color: C.line,
   });
   slide.addText(
     richRuns(text, fontSizeOverride || cardFontSize(text, columns), compactSpacing),
     {
-    x: x + 0.12,
-    y: y + 0.1,
-    w: w - 0.24,
-    h: h - 0.18,
+    x: x + 0.02,
+    y: y + 0.23,
+    w: w - 0.08,
+    h: h - 0.27,
     margin: 0,
     valign: "top",
     breakLine: false,
@@ -483,45 +486,36 @@ function addCardWithBottomSource(
     addCard(slide, text, x, y, w, h, index, columns);
     return;
   }
-  const topColor = [C.blue, C.teal, C.navy][index % 3];
+  const topColor = index === 0 ? C.blue : C.line;
   const fontSize = cardFontSize(text, columns);
   const sourceH = 1.12;
-  slide.addShape(pptx.ShapeType.rect, {
+  slide.addShape(pptx.ShapeType.line, {
     x,
     y,
     w,
-    h,
-    fill: { color: C.soft, transparency: 82 },
-    line: { color: C.line, width: 0.8 },
-  });
-  slide.addShape(pptx.ShapeType.rect, {
-    x,
-    y,
-    w,
-    h: 0.055,
-    fill: { color: topColor },
-    line: { color: topColor, transparency: 100 },
+    h: 0,
+    line: { color: topColor, width: index === 0 ? 1.6 : 0.8 },
   });
   slide.addText(richRuns(parts.main, fontSize), {
-    x: x + 0.12,
-    y: y + 0.1,
-    w: w - 0.24,
+    x: x + 0.02,
+    y: y + 0.23,
+    w: w - 0.08,
     h: h - sourceH - 0.24,
     margin: 0,
     valign: "top",
     breakLine: false,
   });
   slide.addShape(pptx.ShapeType.line, {
-    x: x + 0.12,
+    x: x + 0.02,
     y: y + h - sourceH - 0.04,
-    w: w - 0.24,
+    w: w - 0.08,
     h: 0,
     line: { color: C.line, width: 0.8 },
   });
   slide.addText(parts.source, {
-    x: x + 0.12,
+    x: x + 0.02,
     y: y + h - sourceH + 0.07,
-    w: w - 0.24,
+    w: w - 0.08,
     h: sourceH - 0.16,
     margin: 0,
     fontFace: "Arial",
@@ -533,7 +527,7 @@ function addCardWithBottomSource(
   });
 }
 
-function addImageFrame(slide, relativePath, x, y, w, h, caption = "AI-ASSISTED TRANSPORTATION WORKFLOW") {
+function addImageFrame(slide, relativePath, x, y, w, h) {
   if (!relativePath) return;
   const imagePath = path.join(projectRoot, relativePath.replace(/\//g, path.sep));
   slide.addImage({
@@ -545,35 +539,6 @@ function addImageFrame(slide, relativePath, x, y, w, h, caption = "AI-ASSISTED T
     sizing: { type: "cover", w, h },
     altText: "Transportation planning and engineering professionals using AI-assisted workflows",
   });
-  slide.addShape(pptx.ShapeType.rect, {
-    x,
-    y,
-    w,
-    h,
-    fill: { color: C.white, transparency: 100 },
-    line: { color: C.line, width: 0.8 },
-  });
-  if (caption) {
-    slide.addShape(pptx.ShapeType.rect, {
-      x: x + 0.16,
-      y: y + h - 0.5,
-      w: Math.min(w - 0.32, 2.95),
-      h: 0.38,
-      fill: { color: C.navy, transparency: 5 },
-      line: { color: C.navy, transparency: 100 },
-    });
-    slide.addText(caption, {
-      x: x + 0.25,
-      y: y + h - 0.43,
-      w: Math.min(w - 0.5, 2.75),
-      h: 0.24,
-      margin: 0,
-      fontSize: 9,
-      bold: true,
-      charSpacing: 0.8,
-      color: C.white,
-    });
-  }
 }
 
 function addCardGrid(slide, body, x, y, w, h, preferredColumns, slideNumber = 0) {
@@ -634,27 +599,17 @@ function addCardGrid(slide, body, x, y, w, h, preferredColumns, slideNumber = 0)
 
 function addConceptNode(slide, label, x, y, w, h, tone = "navy") {
   const accent = tone === "blue" ? C.blue : tone === "green" ? C.teal : C.navy;
-  slide.addShape(pptx.ShapeType.roundRect, {
+  slide.addShape(pptx.ShapeType.line, {
     x,
-    y,
+    y: y + h,
     w,
-    h,
-    rectRadius: 0.05,
-    fill: { color: C.white },
-    line: { color: C.line, width: 0.8 },
-  });
-  slide.addShape(pptx.ShapeType.rect, {
-    x,
-    y,
-    w: 0.06,
-    h,
-    fill: { color: accent },
-    line: { color: accent, transparency: 100 },
+    h: 0,
+    line: { color: accent, width: tone === "navy" ? 0.8 : 1.8 },
   });
   slide.addText(label, {
-    x: x + 0.1,
-    y: y + 0.04,
-    w: w - 0.16,
+    x,
+    y: y + 0.02,
+    w,
     h: h - 0.08,
     margin: 0,
     fontFace: "Arial",
@@ -696,13 +651,12 @@ function addConceptFlow(slide, labels, x, y, w, h, tones = [], glyph = "→") {
 }
 
 function addConceptVisual(slide, slideNumber, x, y, w, h) {
-  slide.addShape(pptx.ShapeType.rect, {
+  slide.addShape(pptx.ShapeType.line, {
     x,
     y,
     w,
-    h,
-    fill: { color: C.soft, transparency: 86 },
     line: { color: C.line, width: 0.8 },
+    h: 0,
   });
   if (slideNumber === 6) {
     const gap = 0.18;
@@ -854,14 +808,6 @@ function addRoleOrbit(slide) {
   const y = 4.66;
   const w = 4.05;
   const h = 1.92;
-  slide.addShape(pptx.ShapeType.rect, {
-    x,
-    y,
-    w,
-    h,
-    fill: { color: C.soft, transparency: 87 },
-    line: { color: C.line, width: 0.8 },
-  });
   addConceptNode(slide, "Human Lead", x + 1.35, y + 0.12, 1.35, 0.5, "green");
   const nodes = [
     ["Agents", x + 0.2, y + 0.76, 1.05],
@@ -1073,38 +1019,29 @@ function renderAgendaSlide(sourceSlide, title, body) {
     const row = Math.floor(index / cols);
     const cx = x + col * (cw + gap);
     const cy = y + row * (ch + gap);
-    slide.addShape(pptx.ShapeType.rect, {
+    const agendaAccent = index < 2 ? C.blue : C.line;
+    slide.addShape(pptx.ShapeType.line, {
       x: cx,
       y: cy,
       w: cw,
-      h: ch,
-      fill: { color: C.soft, transparency: 84 },
-      line: { color: C.line, width: 0.8 },
-    });
-    const agendaAccent = index % 2 === 0 ? C.blue : C.teal;
-    slide.addShape(pptx.ShapeType.rect, {
-      x: cx,
-      y: cy,
-      w: 0.06,
-      h: ch,
-      fill: { color: agendaAccent },
-      line: { color: agendaAccent, transparency: 100 },
+      h: 0,
+      line: { color: agendaAccent, width: index < 2 ? 1.6 : 0.8 },
     });
     slide.addText(String(index + 1).padStart(2, "0"), {
-      x: cx + 0.14,
-      y: cy + 0.11,
-      w: 0.42,
-      h: 0.25,
+      x: cx,
+      y: cy + 0.14,
+      w: 0.54,
+      h: 0.35,
       margin: 0,
       fontFace: "Arial",
-      fontSize: 17,
+      fontSize: 23,
       bold: true,
       color: agendaAccent,
     });
     slide.addText(entry.question, {
-      x: cx + 0.63,
-      y: cy + 0.1,
-      w: cw - 0.75,
+      x: cx + 0.7,
+      y: cy + 0.12,
+      w: cw - 0.7,
       h: 0.48,
       margin: 0,
       fontFace: "Arial",
@@ -1113,9 +1050,9 @@ function renderAgendaSlide(sourceSlide, title, body) {
       color: C.navy,
     });
     slide.addText(entry.detail, {
-      x: cx + 0.63,
+      x: cx + 0.7,
       y: cy + 0.58,
-      w: cw - 0.75,
+      w: cw - 0.7,
       h: ch - 0.66,
       margin: 0,
       fontSize: 14,
@@ -1126,15 +1063,24 @@ function renderAgendaSlide(sourceSlide, title, body) {
   addImageFrame(slide, imageBySlide[sourceSlide.number], 9.13, 1.18, 3.85, 5.83, "");
   const finalText = body.filter((text) => !isFooter(text)).slice(1).join("\n");
   if (finalText) {
+    slide.addShape(pptx.ShapeType.rect, {
+      x: 9.13,
+      y: 6.18,
+      w: 3.85,
+      h: 0.66,
+      line: { color: C.navy, transparency: 100 },
+      fill: { color: C.navy, transparency: 16 },
+    });
     slide.addText(finalText, {
-      x: 9.3,
-      y: 6.02,
-      w: 3.52,
-      h: 0.78,
-      margin: 0.04,
-      fill: { color: C.navy, transparency: 8 },
+      x: 9.32,
+      y: 6.31,
+      w: 3.46,
+      h: 0.36,
+      margin: 0,
       color: C.white,
-      fontSize: 14,
+      fontSize: 11,
+      italic: true,
+      fit: "shrink",
     });
   }
   addFooter(slide, body, sourceSlide.number);
@@ -1147,21 +1093,12 @@ function renderTimelineSlide(sourceSlide, title, body) {
   const { intro, entries } = parseTimeline(body);
   const hasIntro = intro.length > 0;
   if (hasIntro) {
-    slide.addShape(pptx.ShapeType.rect, {
+    slide.addShape(pptx.ShapeType.line, {
       x: 0.35,
       y: 1.18,
-      w: 12.63,
-      h: 0.82,
-      fill: { color: C.soft, transparency: 78 },
-      line: { color: C.line, width: 0.8 },
-    });
-    slide.addShape(pptx.ShapeType.rect, {
-      x: 0.35,
-      y: 1.18,
-      w: 0.07,
-      h: 0.82,
-      fill: { color: C.blue },
-      line: { color: C.blue, transparency: 100 },
+      w: 0,
+      h: 0.68,
+      line: { color: C.blue, width: 1.6 },
     });
     slide.addText(richRuns(intro.join("\n"), 14), {
       x: 0.54,
@@ -1239,21 +1176,12 @@ function renderRoleSlide(sourceSlide, title, body) {
   const textW = hasImage ? 8.75 : 12.63;
   const hasIntro = intro.length > 0;
   if (hasIntro) {
-    slide.addShape(pptx.ShapeType.rect, {
+    slide.addShape(pptx.ShapeType.line, {
       x: 0.35,
       y: 1.18,
-      w: textW,
-      h: 0.76,
-      fill: { color: C.soft, transparency: 78 },
-      line: { color: C.line, width: 0.8 },
-    });
-    slide.addShape(pptx.ShapeType.rect, {
-      x: 0.35,
-      y: 1.18,
-      w: 0.07,
-      h: 0.76,
-      fill: { color: C.teal },
-      line: { color: C.teal, transparency: 100 },
+      w: 0,
+      h: 0.64,
+      line: { color: C.teal, width: 1.6 },
     });
     slide.addText(richRuns(intro.join("\n"), 14), {
       x: 0.54,
@@ -1407,52 +1335,52 @@ function renderImageSplitSlide(sourceSlide, title, body) {
 }
 
 function addStageCard(slide, stage, x, y, w, h, index) {
-  const colors = [C.navy, C.blue, C.teal];
-  const headerColor = colors[index];
-  slide.addShape(pptx.ShapeType.rect, {
+  const headerColor = index === 0 ? C.navy : index === 1 ? C.blue : C.teal;
+  if (index === 2) {
+    slide.addShape(pptx.ShapeType.rect, {
+      x,
+      y,
+      w,
+      h,
+      fill: { color: C.teal, transparency: 92 },
+      line: { color: C.teal, transparency: 100 },
+    });
+  }
+  slide.addShape(pptx.ShapeType.line, {
     x,
     y,
     w,
-    h,
-    fill: { color: C.soft, transparency: 82 },
-    line: { color: C.line, width: 0.8 },
-  });
-  slide.addShape(pptx.ShapeType.rect, {
-    x,
-    y,
-    w,
-    h: 0.64,
-    fill: { color: headerColor },
-    line: { color: headerColor, transparency: 100 },
+    h: 0,
+    line: { color: headerColor, width: index === 2 ? 2.0 : 1.0 },
   });
   slide.addText(String(index + 1).padStart(2, "0"), {
-    x: x + 0.12,
-    y: y + 0.18,
+    x,
+    y: y + 0.14,
     w: 0.34,
     h: 0.2,
     margin: 0,
     fontFace: "Arial",
     fontSize: 9,
     bold: true,
-    color: index === 2 ? C.navy : C.white,
+    color: C.line,
     transparency: 32,
   });
   slide.addText(stage.label, {
-    x: x + 0.5,
-    y: y + 0.12,
+    x: x + 0.42,
+    y: y + 0.08,
     w: w - 0.62,
     h: 0.36,
     margin: 0,
     fontFace: "Arial",
     fontSize: 20,
     bold: true,
-    color: index === 2 ? C.navy : C.white,
+    color: index === 1 ? C.blue : C.navy,
   });
   slide.addText(richRuns(stage.text, 14, true), {
-    x: x + 0.13,
-    y: y + 0.76,
-    w: w - 0.26,
-    h: h - 0.88,
+    x: x + (index === 2 ? 0.14 : 0.02),
+    y: y + 0.66,
+    w: w - (index === 2 ? 0.28 : 0.08),
+    h: h - 0.72,
     margin: 0,
     valign: "top",
     breakLine: false,
